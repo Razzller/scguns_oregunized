@@ -166,6 +166,7 @@ dependencies {
     implementation fg.deobf("curse.maven:scorched-guns-802940:7201155")
     implementation fg.deobf("curse.maven:oreganized-769203:7182747")
     implementation fg.deobf("curse.maven:blueprint-382216:6408581")
+    implementation fg.deobf("curse.maven:worldedit-225608:4586218")
 
 
     implementation fg.deobf("curse.maven:selene-499980:7119907")

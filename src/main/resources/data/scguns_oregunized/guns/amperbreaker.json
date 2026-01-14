@@ -10,9 +10,9 @@
   "general": {
     "weaponType": "shock",
     "fireMode": "scguns:semi_automatic",
-    "gripType": "scguns:one_handed",
-    "baseGripType": "scguns:one_handed",
-    "rate": 8,
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 12,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 20,
     "hotBarrelRate": 10
@@ -45,13 +45,13 @@
   },
   "projectile": {
     "alwaysSpread": true,
-    "projectileAmount": 6,
-    "recoilAngle": 2.5,
+    "projectileAmount": 9,
+    "recoilAngle": 4.0,
     "recoilKick": 1.5,
-    "spread": 3.0,
+    "spread": 4.0,
     "criticalChance": 0.05,
     "advantage": "scguns:water",
-    "damage": 12.0,
+    "damage": 18.0,
     "damageFalloffStart": 12.0,
     "damageFalloffEnd": 35.0,
     "damageFalloffMinMultiplier": 0.65,
@@ -66,7 +66,7 @@
   },
   "reloads": {
     "emptyMagTimer": 10,
-    "maxAmmo": 4,
+    "maxAmmo": 12,
     "reloadTimer": 30,
     "reloadType": "scguns:mag_fed"
   },

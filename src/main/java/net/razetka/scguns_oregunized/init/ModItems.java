@@ -83,6 +83,17 @@ public class ModItems {
                     ModSounds.COPPER_GUN_JAM.get(),      // Ejector sound pull
                     ModSounds.COPPER_GUN_JAM.get()    // Ejector sound release
             ));
+    public static final RegistryObject<AnimatedGunItem> AMPERBREAKER = ITEMS.register("amperbreaker",
+            () -> new AnimatedGunItem(
+                    new Item.Properties().stacksTo(1).durability(1200),
+                    "amperbreaker", // Model path
+                    ModSounds.MAG_OUT.get(),        // Reload sound mag out
+                    ModSounds.MAG_IN.get(),         // Reload sound mag in
+                    ModSounds.RELOAD_END.get(),           // Reload sound end
+                    ModSounds.COPPER_GUN_JAM.get(),      // Ejector sound pull
+                    ModSounds.COPPER_GUN_JAM.get()    // Ejector sound release
+            ));
+
     public static final RegistryObject<Item> STELLAR_ORDER_BLUEPRINT = ITEMS.register("stellar_order_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ELECTRUM_GUN_FRAME = ITEMS.register("electrum_gun_frame", () -> new Item(new Item.Properties()));
 

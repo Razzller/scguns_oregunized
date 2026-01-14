@@ -23,6 +23,7 @@ public class ModCreativeTabs {
         addItemWithFullAmmo(pOutput, ModItems.HARETROT.get());
         addItemWithFullAmmo(pOutput, ModItems.VOLTERSP.get());
         addItemWithFullAmmo(pOutput, ModItems.MACTRICIA.get());
+        addItemWithFullAmmo(pOutput, ModItems.AMPERBREAKER.get());
         addItemWithFullAmmo(pOutput, ModItems.JUPITER7.get());
         addItem(pOutput, ModItems.STELLAR_ORDER_BLUEPRINT.get());
         addItem(pOutput, ModItems.ELECTRUM_GUN_FRAME.get());
