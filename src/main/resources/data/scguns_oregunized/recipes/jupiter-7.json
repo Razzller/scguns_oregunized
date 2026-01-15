@@ -1,0 +1,39 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns_oregunized:jupiter-7",
+    "count": 1
+  },
+  "ingredients": {
+    "blueprint": {
+      "item": "scguns_oregunized:stellar_order_blueprint"
+    },
+    "gun_internal_1": {
+      "item": "scguns:firing_unit"
+    },
+    "gun_internal_2": {
+      "item": "scguns:heavy_gun_parts"
+    },
+    "gun_top_internal_1": {
+      "item": "scguns:treated_brass_ingot"
+    },
+    "gun_top_internal_2": {
+      "item": "scguns_oregunized:electrum_gun_frame"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_barrel_1": {
+      "item": "scguns:gun_barrel"
+    },
+    "gun_barrel_2": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "gun_top_barrel_1": {
+      "item": "scguns:copper_disc"
+    },
+    "gun_magazine": {
+      "item": "scguns:energy_core"
+    }
+  }
+}

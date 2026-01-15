@@ -1,6 +1,7 @@
 package net.razetka.scguns_oregunized;
 
 import com.mojang.logging.LogUtils;
+import galena.oreganized.index.OItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -11,9 +12,13 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
 import net.razetka.scguns_oregunized.init.ModCreativeTabs;
+import net.razetka.scguns_oregunized.init.ModEntities;
 import net.razetka.scguns_oregunized.init.ModItems;
 import org.slf4j.Logger;
+import top.ribs.scguns.common.ProjectileManager;
+import top.ribs.scguns.entity.player.GunTierRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ScGunsOregunized.MODID)
@@ -30,6 +35,7 @@ public class ScGunsOregunized
 
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -39,7 +45,9 @@ public class ScGunsOregunized
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        GunTierRegistry.register("stellar_order", 6, "stellar_order_gun_tier", 4);
 
+        ProjectileManager.getInstance().registerFactory(OItems.LEAD_BOLT.get(), (worldIn, entity, weapon, item, modifiedGun) -> new DummyProjectileEntity(ModEntities.DUMMY_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
     }
 
     // Add the example block item to the building blocks tab

@@ -27,6 +27,7 @@ public class ModCreativeTabs {
         addItemWithFullAmmo(pOutput, ModItems.JUPITER7.get());
         addItem(pOutput, ModItems.STELLAR_ORDER_BLUEPRINT.get());
         addItem(pOutput, ModItems.ELECTRUM_GUN_FRAME.get());
+        addItem(pOutput, ModItems.ASSASSIN_DAGGER.get());
     }).build());
 
     public static void register(IEventBus eventBus) {
