@@ -1,0 +1,56 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/whirlwind"
+	},
+	"elements": [
+		{
+			"name": "speed_mag",
+			"from": [7.53385, -0.4, 17.65],
+			"to": [8.45385, 0.1, 19.45],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.49385, 1.25, 19]},
+			"faces": {
+				"north": {"uv": [1, 12, 1.5, 12.25], "texture": "#0"},
+				"east": {"uv": [10.5, 7, 11.5, 7.25], "texture": "#0"},
+				"south": {"uv": [12, 1, 12.5, 1.25], "texture": "#0"},
+				"west": {"uv": [7.5, 10.5, 8.5, 10.75], "texture": "#0"},
+				"up": {"uv": [2.5, 10, 3, 11], "texture": "#0"},
+				"down": {"uv": [3, 10, 3.5, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "speed_mag",
+			"from": [7.60885, 0.1, 17.8],
+			"to": [8.37885, 4.1, 19.3],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.49385, 1.25, 19]},
+			"faces": {
+				"north": {"uv": [2, 6.5, 2.5, 8.5], "texture": "#0"},
+				"east": {"uv": [4, 4, 4.75, 6], "texture": "#0"},
+				"south": {"uv": [2.5, 6.5, 3, 8.5], "texture": "#0"},
+				"west": {"uv": [3, 4.5, 3.75, 6.5], "texture": "#0"},
+				"up": {"uv": [10, 8.5, 10.5, 9.25], "texture": "#0"},
+				"down": {"uv": [9, 10, 9.5, 10.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "speed_mag",
+			"from": [7.99385, -1.4, 17.8],
+			"to": [7.99385, -0.4, 19.3],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.49385, 1.25, 19]},
+			"faces": {
+				"west": {"uv": [3.25, 12.5, 4, 13], "texture": "#0"}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "speed_mag",
+			"origin": [8.475, -7.18876, 13.3287],
+			"color": 6,
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+
+  "item.amperbreaker.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/amperbreaker/fire"
+      }
+    ]
+  },
+  "item.mactricia.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/mactricia/fire"
+      }
+    ]
+},
+  "item.volter_sp.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/volter_sp/fire"
+      }
+    ]
+  }
+}

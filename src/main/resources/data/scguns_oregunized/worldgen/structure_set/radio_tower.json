@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "scguns_oregunized:radio_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 95215215,
+
+    "spacing": 60,
+
+    "separation": 20,
+
+    "type": "minecraft:random_spread"
+  }
+}

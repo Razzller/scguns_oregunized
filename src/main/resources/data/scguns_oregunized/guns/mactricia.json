@@ -3,19 +3,21 @@
     "flash": {
       "size": 1.0,
       "yOffset": 5.0,
-      "zOffset": -11.5,
+      "zOffset": -13.0,
       "textureLocation": "muzzle_flash_7"
     }
   },
   "general": {
-    "weaponType": "shock",
+    "weaponType": "smg",
     "fireMode": "scguns:automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 5,
+    "speedModifier": 1.1,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 20,
-    "hotBarrelRate": 10
+    "hotBarrelRate": 10,
+    "isSilenced": true
   },
   "modules": {
     "attachments": {
@@ -50,8 +52,8 @@
     "recoilKick": 1.5,
     "spread": 1.0,
     "criticalChance": 0.05,
-    "advantage": "scguns:water",
-    "damage":7.0,
+    "advantage": "scguns:asghar",
+    "damage": 9.0,
     "damageFalloffStart": 18.0,
     "damageFalloffEnd": 45.0,
     "damageFalloffMinMultiplier": 0.65,
@@ -72,9 +74,9 @@
   },
   "sounds": {
     "cock": "scguns:item.makeshift_rifle.cock",
-    "enchantedFire": "scguns:item.shock.fire",
-    "fire": "scguns:item.shock.fire",
+    "enchantedFire": "scguns_oregunized:item.mactricia.fire",
+    "fire": "scguns_oregunized:item.mactricia.fire",
     "reload": "scguns:item.gauss.reload",
-    "silencedFire": "scguns:item.shock.silenced_fire"
+    "silencedFire": "scguns_oregunized:item.mactricia.fire"
   }
 }

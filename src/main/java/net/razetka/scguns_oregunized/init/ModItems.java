@@ -7,7 +7,9 @@ import net.minecraftforge.registries.RegistryObject;
 import net.razetka.scguns_oregunized.ScGunsOregunized;
 import top.ribs.scguns.init.ModSounds;
 import top.ribs.scguns.item.BlueprintItem;
+import top.ribs.scguns.item.RaidFlareItem;
 import top.ribs.scguns.item.TooltipItem;
+import top.ribs.scguns.item.animated.AnimatedAirGunItem;
 import top.ribs.scguns.item.animated.AnimatedGunItem;
 
 public class ModItems {
@@ -75,7 +77,7 @@ public class ModItems {
                     ModSounds.COPPER_GUN_JAM.get()    // Ejector sound release
             ));
     public static final RegistryObject<AnimatedGunItem> HARETROT = ITEMS.register("haretrot",
-            () -> new AnimatedGunItem(
+            () -> new AnimatedAirGunItem(
                     new Item.Properties().stacksTo(1).durability(1200),
                     "haretrot", // Model path
                     ModSounds.MAG_OUT.get(),        // Reload sound mag out
@@ -97,9 +99,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> STELLAR_ORDER_BLUEPRINT = ITEMS.register("stellar_order_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ELECTRUM_GUN_FRAME = ITEMS.register("electrum_gun_frame", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new TooltipItem(new Item.Properties(),
+    public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new TooltipItem(new Item.Properties().stacksTo(1),
             "item.scguns_oregunized.assassin_dagger_tooltip",
             "item.scguns.found_in_raids"));
+    public static final RegistryObject<Item> STELLAR_ORDER_FLARE = ITEMS.register("stellar_order_flare",
+            () -> new RaidFlareItem(new Item.Properties().stacksTo(16),"stellar_order"));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

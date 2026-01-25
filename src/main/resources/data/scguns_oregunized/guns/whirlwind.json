@@ -11,7 +11,8 @@
     "weaponType": "pistol",
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:one_handed",
-    "rate": 3,
+    "rate": 2,
+    "speedModifier": 1.15,
     "meleeDamage": 2.5,
     "meleeReach": 2.5,
     "meleeCooldownTicks": 10,
@@ -34,7 +35,7 @@
     },
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 6.0,
+      "yOffset": 6.2,
       "zOffset": -1.25
     }
   },
@@ -44,11 +45,11 @@
     "spread": 1.5,
     "criticalChance": 0.08,
     "critDamageMultiplier": 2.0,
-    "advantage": "scguns:none",
+    "advantage": "scguns:asghar",
     "damageFalloffStart": 12.0,
     "damageFalloffEnd": 30.0,
     "damageFalloffMinMultiplier": 0.45,
-    "damage": 7.5,
+    "damage": 8.0,
     "armorPen": 1.0,
     "gravity": false,
     "item": "scguns:compact_advanced_round",
@@ -62,7 +63,7 @@
   },
   "reloads": {
     "emptyMagTimer": 10,
-    "maxAmmo": 20,
+    "maxAmmo": 18,
     "reloadItem": "scguns:compact_advanced_round",
     "reloadTimer": 50,
     "reloadType": "scguns:mag_fed"

@@ -167,6 +167,7 @@ dependencies {
     implementation fg.deobf("curse.maven:oreganized-769203:7182747")
     implementation fg.deobf("curse.maven:blueprint-382216:6408581")
     implementation fg.deobf("curse.maven:worldedit-225608:4586218")
+    implementation fg.deobf("curse.maven:better-third-person-435044:4596768")
 
 
     implementation fg.deobf("curse.maven:selene-499980:7119907")
@@ -240,4 +241,9 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+mixin {
+    add sourceSets.main, "scguns_oregunized.refmap.json"
+    config "scguns_oregunized.mixins.json"
 }

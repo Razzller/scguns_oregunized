@@ -14,7 +14,8 @@
     "baseGripType": "scguns:two_handed",
     "rate": 2,
     "burstAmount": 4,
-    "burstCooldown": 5,
+    "burstCooldown": 6,
+    "speedModifier": 1.1,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 15,
     "meleeReach": 2.5,
@@ -25,12 +26,6 @@
       "barrel": {
         "yOffset": 5.5,
         "zOffset": -6.2
-      },
-      "stock": {
-        "scale": 0.0
-      },
-      "magazine": {
-        "scale": 0.0
       },
       "scope": {
         "size": 0.85,
@@ -51,11 +46,11 @@
     "alwaysSpread": true,
     "criticalChance": 0.05,
     "critDamageMultiplier": 2.0,
-    "advantage": "scguns:none",
-    "damage": 7.0,
-    "damageFalloffStart": 13.0,
-    "damageFalloffEnd": 32.0,
-    "damageFalloffMinMultiplier": 0.5,
+    "advantage": "scguns:asghar",
+    "damage": 8.0,
+    "damageFalloffStart": 16.0,
+    "damageFalloffEnd": 38.0,
+    "damageFalloffMinMultiplier": 0.65,
     "armorPen": 1.0,
     "ejectsCasing": false,
     "item": "scguns:compact_advanced_round",
@@ -68,7 +63,7 @@
   },
   "reloads": {
     "emptyMagTimer": 30,
-    "maxAmmo": 18,
+    "maxAmmo": 36,
     "reloadItem": "scguns:compact_advanced_round",
     "reloadTimer": 100,
     "reloadType": "scguns:mag_fed"

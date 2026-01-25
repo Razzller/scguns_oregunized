@@ -1,0 +1,15 @@
+{
+  "name": "scguns_oregunized:entrance",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:rooms/entrance",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

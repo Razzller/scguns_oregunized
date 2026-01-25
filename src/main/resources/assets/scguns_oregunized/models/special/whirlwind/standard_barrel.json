@@ -1,0 +1,75 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/whirlwind"
+	},
+	"elements": [
+		{
+			"name": "standard_barrel",
+			"from": [7.39384, 4.4, 9.65],
+			"to": [8.54384, 5.55, 10.1],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.99385, 5, 9.225]},
+			"faces": {
+				"north": {"uv": [1, 9.75, 1.75, 10.5], "texture": "#0"},
+				"east": {"uv": [11.5, 2.25, 11.75, 3], "texture": "#0"},
+				"south": {"uv": [1.75, 9.75, 2.5, 10.5], "texture": "#0"},
+				"west": {"uv": [11.75, 2.75, 12, 3.5], "texture": "#0"},
+				"up": {"uv": [4, 11.75, 3.25, 11.5], "texture": "#0"},
+				"down": {"uv": [12, 3.5, 11.25, 3.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "standard_barrel",
+			"from": [7.41707, 4.35, 10.1],
+			"to": [8.41707, 5.35, 12.6],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.81707, 5, 11.225]},
+			"faces": {
+				"north": {"uv": [10.5, 3, 11, 3.5], "texture": "#0"},
+				"east": {"uv": [6, 8, 7.25, 8.5], "texture": "#0"},
+				"south": {"uv": [10.5, 3.5, 11, 4], "texture": "#0"},
+				"west": {"uv": [8, 6.5, 9.25, 7], "texture": "#0"},
+				"up": {"uv": [1, 9.25, 0.5, 8], "texture": "#0"},
+				"down": {"uv": [8.5, 7, 8, 8.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "standard_barrel",
+			"from": [7.51885, 3.45, 10.1],
+			"to": [8.46885, 4.85, 12.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [9.5, 10, 10, 10.75], "texture": "#0"},
+				"east": {"uv": [6, 7, 7.25, 7.75], "texture": "#0"},
+				"south": {"uv": [7, 3.5, 7.75, 4.75], "texture": "#0"},
+				"west": {"uv": [7.5, 1, 8.75, 1.75], "texture": "#0"},
+				"up": {"uv": [2, 3.5, 2.75, 5.5], "texture": "#0"},
+				"down": {"uv": [2.5, 8.5, 2, 9.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "standard_barrel",
+			"from": [7.50523, 5.1125, 10.10233],
+			"to": [8.50523, 5.975, 12.60233],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [14, 6.75, 14.5, 7.25], "texture": "#0"},
+				"east": {"uv": [13.75, 6.25, 15.25, 6.75], "texture": "#0"},
+				"south": {"uv": [13.5, 6.75, 14, 7.25], "texture": "#0"},
+				"west": {"uv": [12.5, 5.75, 13.75, 6.25], "texture": "#0"},
+				"up": {"uv": [13, 6.75, 13.5, 8], "texture": "#0"},
+				"down": {"uv": [12.5, 6.75, 13, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "standard_barrel",
+			"origin": [8.26287, -2.47733, 1.35233],
+			"color": 8,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

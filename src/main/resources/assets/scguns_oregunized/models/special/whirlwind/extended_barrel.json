@@ -1,0 +1,101 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/whirlwind"
+	},
+	"elements": [
+		{
+			"name": "extended_barrel",
+			"from": [7.29207, 4.225, 12.1],
+			"to": [8.54207, 5.475, 12.6],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.81707, 5, 11.225]},
+			"faces": {
+				"north": {"uv": [9, 0, 9.75, 0.75], "texture": "#0"},
+				"east": {"uv": [10.5, 9.5, 10.75, 10.25], "texture": "#0"},
+				"south": {"uv": [1, 9, 1.75, 9.75], "texture": "#0"},
+				"west": {"uv": [10, 10.5, 10.25, 11.25], "texture": "#0"},
+				"up": {"uv": [11.25, 10.75, 10.5, 10.5], "texture": "#0"},
+				"down": {"uv": [11.75, 0, 11, 0.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.41707, 4.35, 7.1],
+			"to": [8.41707, 5.35, 12.1],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.81707, 5, 10.725]},
+			"faces": {
+				"north": {"uv": [10.5, 4, 11, 4.5], "texture": "#0"},
+				"east": {"uv": [6.5, 0, 9, 0.5], "texture": "#0"},
+				"south": {"uv": [4.5, 10.5, 5, 11], "texture": "#0"},
+				"west": {"uv": [6.5, 0.5, 9, 1], "texture": "#0"},
+				"up": {"uv": [1.5, 9, 1, 6.5], "texture": "#0"},
+				"down": {"uv": [2, 6.5, 1.5, 9], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.39384, 4.4, 6.65],
+			"to": [8.54384, 5.55, 7.1],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.99385, 5, 6.225]},
+			"faces": {
+				"north": {"uv": [1, 9.75, 1.75, 10.5], "texture": "#0"},
+				"east": {"uv": [11.5, 2.25, 11.75, 3], "texture": "#0"},
+				"south": {"uv": [1.75, 9.75, 2.5, 10.5], "texture": "#0"},
+				"west": {"uv": [11.75, 2.75, 12, 3.5], "texture": "#0"},
+				"up": {"uv": [4, 11.75, 3.25, 11.5], "texture": "#0"},
+				"down": {"uv": [12, 3.5, 11.25, 3.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.50523, 5.1125, 7.10233],
+			"to": [8.50523, 5.975, 12.60233],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [14, 6.75, 14.5, 7.25], "texture": "#0"},
+				"east": {"uv": [12.5, 6.25, 15.25, 6.75], "texture": "#0"},
+				"south": {"uv": [13.5, 6.75, 14, 7.25], "texture": "#0"},
+				"west": {"uv": [12.5, 5.75, 15.25, 6.25], "texture": "#0"},
+				"up": {"uv": [13, 6.75, 13.5, 9.5], "texture": "#0"},
+				"down": {"uv": [12.5, 6.75, 13, 9.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.49385, 3.1, 10.1],
+			"to": [8.49385, 4.6, 12.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [0, 14.5, 0.5, 15.25], "texture": "#0"},
+				"east": {"uv": [0, 12.5, 1.25, 13.25], "texture": "#0"},
+				"south": {"uv": [0.5, 14.5, 1, 15.25], "texture": "#0"},
+				"west": {"uv": [0, 13.5, 1.25, 14.25], "texture": "#0"},
+				"down": {"uv": [1.5, 13.5, 2, 14.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.49385, 3.6, 7.1],
+			"to": [8.49385, 4.6, 10.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [1, 14.5, 1.5, 15], "texture": "#0"},
+				"east": {"uv": [1.5, 12.5, 3, 13], "texture": "#0"},
+				"south": {"uv": [4.5, 8, 5, 8.5], "texture": "#0"},
+				"west": {"uv": [1.5, 13, 3, 13.5], "texture": "#0"},
+				"down": {"uv": [1.5, 13.5, 2, 14.75], "texture": "#0"}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "extended_barrel",
+			"origin": [8.26287, -2.47733, 1.95233],
+			"color": 9,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}

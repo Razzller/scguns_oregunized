@@ -2,21 +2,26 @@ package net.razetka.scguns_oregunized;
 
 import com.mojang.logging.LogUtils;
 import galena.oreganized.index.OItems;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.razetka.scguns_oregunized.client.ClientHandler;
 import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
 import net.razetka.scguns_oregunized.init.ModCreativeTabs;
 import net.razetka.scguns_oregunized.init.ModEntities;
 import net.razetka.scguns_oregunized.init.ModItems;
+import net.razetka.scguns_oregunized.init.ModSounds;
 import org.slf4j.Logger;
+import top.ribs.scguns.client.screen.BlueprintScreen;
 import top.ribs.scguns.common.ProjectileManager;
 import top.ribs.scguns.entity.player.GunTierRegistry;
 
@@ -36,6 +41,11 @@ public class ScGunsOregunized
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
+
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+            ClientHandler.registerClientHandlers(modEventBus);
+        });
 
         modEventBus.addListener(this::commonSetup);
 

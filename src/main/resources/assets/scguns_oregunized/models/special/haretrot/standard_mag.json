@@ -1,0 +1,47 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/haretrot",
+		"particle": "scguns_oregunized:item/haretrot"
+	},
+	"elements": [
+		{
+			"name": "default_mag",
+			"from": [7.50312, 0.44767, 8.76483],
+			"to": [8.50312, 2.94767, 11.26483],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 9]},
+			"faces": {
+				"north": {"uv": [5.75, 5.75, 6, 6.375], "texture": "#0"},
+				"east": {"uv": [2.75, 0.5, 3.375, 1.125], "texture": "#0"},
+				"south": {"uv": [0, 6, 0.25, 6.625], "texture": "#0"},
+				"west": {"uv": [3.75, 0.5, 4.375, 1.125], "texture": "#0"},
+				"up": {"uv": [0.5, 6.625, 0.25, 6], "texture": "#0"},
+				"down": {"uv": [0.75, 6, 0.5, 6.625], "texture": "#0"}
+			}
+		},
+		{
+			"name": "default_mag",
+			"from": [7.50312, -0.05233, 8.63983],
+			"to": [8.50312, 0.44767, 11.38983],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 9]},
+			"faces": {
+				"north": {"uv": [6.75, 7.75, 7, 7.875], "texture": "#0"},
+				"east": {"uv": [7, 3, 7.75, 3.125], "texture": "#0"},
+				"south": {"uv": [7.75, 6.75, 8, 6.875], "texture": "#0"},
+				"west": {"uv": [7, 3.5, 7.75, 3.625], "texture": "#0"},
+				"up": {"uv": [3, 6.25, 2.75, 5.5], "texture": "#0"},
+				"down": {"uv": [3.25, 5.5, 3, 6.25], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "default_mag",
+			"origin": [8.225, -7.86376, 11.2787],
+			"color": 3,
+			"children": [0, 1]
+		}
+	]
+}

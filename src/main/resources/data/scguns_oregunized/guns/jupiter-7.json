@@ -4,12 +4,12 @@
       "size": 1.0,
       "yOffset": 4.7,
       "zOffset": -11.5,
-      "textureLocation": "muzzle_flash_9"
+      "textureLocation": "muzzle_flash_8"
     },
     "beamOrigin": {
       "horizontalOffset": 0.1,
-      "verticalOffset": -0.05,
-      "forwardOffset": 0.6,
+      "verticalOffset": -0.1,
+      "forwardOffset": 0.2,
       "aimHorizontalOffset": 0.0
     }
   },
@@ -17,13 +17,14 @@
     "weaponType": "laser",
     "hasCameraShake": false,
     "fireMode": "scguns:semi_beam",
-    "beamColor": "#ff0000",
-    "secondaryBeamColor": "#e66363",
-    "enchantedBeamColor": "#FF71479e",
-    "enchantedSecondaryBeamColor": "#ff7fc3",
+    "beamColor": "#d309d3",
+    "secondaryBeamColor": "#ff4fff",
+    "enchantedBeamColor": "#16d716",
+    "enchantedSecondaryBeamColor": "#84dd84",
     "gripType": "scguns:one_handed",
     "baseGripType": "scguns:one_handed",
     "rate": 4,
+    "speedModifier": 1.15,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 10,
     "hotBarrelRate": 15,
@@ -36,10 +37,7 @@
       "scope": {
         "size": 0.8,
         "yOffset": 6.35,
-        "zOffset": 5.2
-      },
-      "stock": {
-        "scale": 0.0
+        "zOffset": 4.5
       }
     },
     "zoom": {
@@ -53,7 +51,7 @@
     "recoilKick": 1.0,
     "spread": 2.0,
     "criticalChance": 0.05,
-    "advantage": "scguns:none",
+    "advantage": "scguns:asghar",
     "damage": 12.0,
     "ejectsCasing": false,
     "gravity": false,

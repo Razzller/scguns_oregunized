@@ -8,14 +8,16 @@
     }
   },
   "general": {
-    "weaponType": "shock",
+    "weaponType": "shotgun",
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 12,
+    "speedModifier": 1.1,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 20,
-    "hotBarrelRate": 10
+    "hotBarrelRate": 10,
+    "isSilenced": true
   },
   "modules": {
     "attachments": {
@@ -26,16 +28,7 @@
       "underBarrel": {
         "yOffset": 5.5,
         "zOffset": -2.5
-      },
-      "magazine": {
-        "scale": 0.0
-      },
-      "scope": {
-        "size": 0.85,
-        "yOffset": 6.35,
-        "zOffset": 4.5
       }
-
     },
     "zoom": {
       "fovModifier": 0.6,
@@ -46,14 +39,14 @@
   "projectile": {
     "alwaysSpread": true,
     "projectileAmount": 9,
-    "recoilAngle": 4.0,
-    "recoilKick": 1.5,
+    "recoilAngle": 4.5,
+    "recoilKick": 1.75,
     "spread": 4.0,
     "criticalChance": 0.05,
-    "advantage": "scguns:water",
-    "damage": 18.0,
-    "damageFalloffStart": 12.0,
-    "damageFalloffEnd": 35.0,
+    "advantage": "scguns:asghar",
+    "damage": 24.0,
+    "damageFalloffStart": 8.0,
+    "damageFalloffEnd": 20.0,
     "damageFalloffMinMultiplier": 0.65,
     "ejectsCasing": true,
     "gravity": false,
@@ -72,9 +65,9 @@
   },
   "sounds": {
     "cock": "scguns:item.makeshift_rifle.cock",
-    "enchantedFire": "scguns:item.shock.fire",
-    "fire": "scguns:item.shock.fire",
+    "enchantedFire": "scguns_oregunized:item.amperbreaker.fire",
+    "fire": "scguns_oregunized:item.amperbreaker.fire",
     "reload": "scguns:item.gauss.reload",
-    "silencedFire": "scguns:item.shock.silenced_fire"
+    "silencedFire": "scguns_oregunized:item.amperbreaker.fire"
   }
 }

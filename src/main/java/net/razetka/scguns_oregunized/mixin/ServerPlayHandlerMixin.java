@@ -5,6 +5,7 @@ import galena.oreganized.index.OEntityTypes;
 import galena.oreganized.index.OItems;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
@@ -43,7 +44,7 @@ public abstract class ServerPlayHandlerMixin {
             arrow.yRotO = arrow.getYRot();
             arrow.xRotO = arrow.getXRot();
 
-            arrow.setBaseDamage(modifiedGun.getProjectile().getDamage() * 0.25);
+            arrow.setBaseDamage(modifiedGun.getProjectile().getDamage() * 0.1);
 
             arrow.pickup = Arrow.Pickup.ALLOWED;
 
