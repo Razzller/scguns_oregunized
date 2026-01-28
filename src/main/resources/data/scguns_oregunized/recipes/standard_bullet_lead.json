@@ -1,0 +1,16 @@
+{
+  "type": "scguns:mechanical_pressing",
+  "processingTime": 50,
+  "ingredients": [
+    {
+      "item": "oreganized:lead_ingot"
+    }
+  ],
+  "mold": {
+    "item": "scguns:bullet_mold"
+  },
+  "result": {
+    "item": "scguns:standard_bullet",
+    "count": 16
+  }
+}

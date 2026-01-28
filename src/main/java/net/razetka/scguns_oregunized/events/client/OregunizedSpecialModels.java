@@ -22,6 +22,13 @@ public enum OregunizedSpecialModels {
     WHIRLWIND_ADVANCED_SILENCER("whirlwind/advanced_silencer"),
     WHIRLWIND_MUZZLE_BRAKE("whirlwind/muzzle_brake"),
 
+    HERMES_MAIN("hermes/main"),
+    HERMES_EXTENDED_BARREL("hermes/extended_barrel"),
+    HERMES_STANDARD_BARREL("hermes/standard_barrel"),
+    HERMES_SILENCER("hermes/silencer"),
+    HERMES_ADVANCED_SILENCER("hermes/advanced_silencer"),
+    HERMES_MUZZLE_BRAKE("hermes/muzzle_brake"),
+
     AVANTRIMA_MAIN("avantrima/main"),
     AVANTRIMA_STANDARD_BARREL("avantrima/standard_barrel"),
     AVANTRIMA_EXTENDED_BARREL("avantrima/extended_barrel"),
@@ -38,8 +45,36 @@ public enum OregunizedSpecialModels {
     VOLTER_SP_MAIN("volter_sp/main"),
 
     MACTRICIA_MAIN("mactricia/main"),
+    MACTRICIA_SIGHTS("mactricia/sights"),
+    MACTRICIA_IRON_BAYONET("mactricia/iron_bayonet"),
+    MACTRICIA_ANTHRALITE_BAYONET("mactricia/anthralite_bayonet"),
+    MACTRICIA_DIAMOND_BAYONET("mactricia/diamond_bayonet"),
+    MACTRICIA_NETHERITE_BAYONET("mactricia/netherite_bayonet"),
+    MACTRICIA_LIGHT_GRIP("mactricia/light_grip"),
+    MACTRICIA_VERT_GRIP("mactricia/vertical_grip"),
+    MACTRICIA_DEFAULT_MAG("mactricia/default_mag"),
+    MACTRICIA_EXTENDED_MAG("mactricia/extended_mag"),
+    MACTRICIA_SPEED_MAG("mactricia/speed_mag"),
+    MACTRICIA_LIGHT_STOCK("mactricia/light_stock"),
+    MACTRICIA_WOODEN_STOCK("mactricia/wooden_stock"),
+    MACTRICIA_WEIGHTED_STOCK("mactricia/weighted_stock"),
+    MACTRICIA_STANDARD_STOCK("mactricia/standard_grip"),
 
-    AMPERBREAKER_MAIN("amperbreaker/main");
+    AMPERBREAKER_MAIN("amperbreaker/main"),
+    AMPERBREAKER_IRON_BAYONET("amperbreaker/iron_bayonet"),
+    AMPERBREAKER_ANTHRALITE_BAYONET("amperbreaker/anthralite_bayonet"),
+    AMPERBREAKER_DIAMOND_BAYONET("amperbreaker/diamond_bayonet"),
+    AMPERBREAKER_NETHERITE_BAYONET("amperbreaker/netherite_bayonet"),
+    AMPERBREAKER_LIGHT_GRIP("amperbreaker/light_grip"),
+    AMPERBREAKER_VERTICAL_GRIP("amperbreaker/vertical_grip"),
+    AMPERBREAKER_LIGHT_STOCK("amperbreaker/light_stock"),
+    AMPERBREAKER_WOODEN_STOCK("amperbreaker/wooden_stock"),
+    AMPERBREAKER_WEIGHTED_STOCK("amperbreaker/weighted_stock"),
+    AMPERBREAKER_STANDARD_STOCK("amperbreaker/standard_grip"),
+
+    JUPITER7_MAIN("jupiter7/main"),
+    JUPITER7_NO_SIGHTS("jupiter7/no_sights"),
+    JUPITER7_SIGHTS("jupiter7/sights");
 
 
 

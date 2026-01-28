@@ -32,6 +32,9 @@
     "gun_top_barrel_1": {
       "item": "scguns:copper_disc"
     },
+    "gun_top_barrel_2": {
+      "item": "minecraft:redstone"
+    },
     "gun_magazine": {
       "item": "scguns:treated_brass_ingot"
     }

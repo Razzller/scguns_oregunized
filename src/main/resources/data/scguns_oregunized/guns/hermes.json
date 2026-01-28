@@ -12,7 +12,7 @@
     "fireMode": "scguns:automatic",
     "gripType": "scguns:one_handed",
     "rate": 8,
-    "speedModifier": 1.1,
+    "speedModifier": 1.0,
     "meleeDamage": 7.0,
     "meleeReach": 2.5,
     "meleeCooldownTicks": 10,
@@ -33,7 +33,7 @@
     },
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 6.0,
+      "yOffset": 6.35,
       "zOffset": -1.25
     }
   },

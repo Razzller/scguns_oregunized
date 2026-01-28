@@ -2,8 +2,8 @@ package net.razetka.scguns_oregunized;
 
 import com.mojang.logging.LogUtils;
 import galena.oreganized.index.OItems;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,12 +16,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.razetka.scguns_oregunized.client.ClientHandler;
 import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
-import net.razetka.scguns_oregunized.init.ModCreativeTabs;
-import net.razetka.scguns_oregunized.init.ModEntities;
-import net.razetka.scguns_oregunized.init.ModItems;
-import net.razetka.scguns_oregunized.init.ModSounds;
+import net.razetka.scguns_oregunized.events.ElectrumWeaponEventHandler;
+import net.razetka.scguns_oregunized.init.*;
 import org.slf4j.Logger;
-import top.ribs.scguns.client.screen.BlueprintScreen;
 import top.ribs.scguns.common.ProjectileManager;
 import top.ribs.scguns.entity.player.GunTierRegistry;
 
@@ -42,6 +39,10 @@ public class ScGunsOregunized
         ModCreativeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
+
+        MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(ElectrumWeaponEventHandler.class);
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             ClientHandler.registerClientHandlers(modEventBus);
@@ -50,7 +51,7 @@ public class ScGunsOregunized
         modEventBus.addListener(this::commonSetup);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        // context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

@@ -1,0 +1,59 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/amperbreaker"
+	},
+	"elements": [
+		{
+			"name": "iron_bayonet",
+			"from": [7.98599, 1.1, 0.175],
+			"to": [7.98599, 2.65, 10.425],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"east": {"uv": [0, 0, 5.25, 0.75], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"up": {"uv": [0, 5.25, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "iron_bayonet",
+			"from": [7.23599, 2.7, 8.425],
+			"to": [8.73599, 4.2, 8.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [11, 2, 11.75, 2.75], "texture": "#0"},
+				"east": {"uv": [2, 14, 2.25, 14.75], "texture": "#0"},
+				"south": {"uv": [3, 11, 3.75, 11.75], "texture": "#0"},
+				"west": {"uv": [14, 2, 14.25, 2.75], "texture": "#0"},
+				"up": {"uv": [3.25, 14.25, 2.5, 14], "texture": "#0"},
+				"down": {"uv": [14.75, 3, 14, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "iron_bayonet",
+			"from": [7.61099, 1.7, 8.425],
+			"to": [8.36099, 2.7, 8.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [6.5, 13, 7, 13.5], "texture": "#0"},
+				"east": {"uv": [6.5, 14.5, 6.75, 15], "texture": "#0"},
+				"south": {"uv": [13, 7.5, 13.5, 8], "texture": "#0"},
+				"west": {"uv": [7, 14.5, 7.25, 15], "texture": "#0"},
+				"up": {"uv": [8, 14.75, 7.5, 14.5], "texture": "#0"},
+				"down": {"uv": [8.5, 14.5, 8, 14.75], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "iron_bayonet",
+			"origin": [8, 0.475, 10.95],
+			"color": 6,
+			"children": [0, 1, 2]
+		}
+	]
+}

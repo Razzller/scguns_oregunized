@@ -1,0 +1,16 @@
+{
+  "type": "scguns:mechanical_pressing",
+  "processingTime": 50,
+  "ingredients": [
+      {
+        "item": "oreganized:lead_block"
+      }
+  ],
+  "mold": {
+    "item": "scguns:large_casing_mold"
+  },
+  "result": {
+    "item": "oreganized:lead_bolt",
+    "count": 9
+  }
+}

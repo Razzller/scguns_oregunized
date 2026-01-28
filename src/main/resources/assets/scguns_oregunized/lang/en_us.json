@@ -2,7 +2,7 @@
   "creativetab.scguns_oregunized_tab": "Oregunized",
   "item.scguns_oregunized.whirlwind": "Whirlwind",
   "item.scguns_oregunized.hermes": "Hermes",
-  "item.scguns_oregunized.avantrima": "Avantrima SMG",
+  "item.scguns_oregunized.avantrima": "Avantrima",
   "item.scguns_oregunized.haretrot": "Haretrot",
   "item.scguns_oregunized.volter_sp": "Volter SP",
   "item.scguns_oregunized.mactricia": "Mactricia",
@@ -14,16 +14,17 @@
   "item.scguns_oregunized.stellar_order_blueprint": "Stellar Order Blueprint",
   "item.scguns_oregunized.electrum_gun_frame": "Electrum Gun Frame",
   "item.scguns_oregunized.stellar_order_flare": "Stellar Order Flare",
+  "effect.scguns_oregunized.overload": "High-Voltage",
 
   "raid.scguns.stellar_order.name": "Summons the Stellar Order",
   "raid.announcement.scguns_oregunized.stellar_order": "The Strike Force of the Order is here!",
 
-  "scguns.desc.whirlwind": "WIP",
-  "scguns.desc.hermes": "WIP Powerful handcannon helped the Order to deal with paranormal activities inside the secret laboratories of the Federacy",
-  "scguns.desc.avantrima": "WIP Quick burst of 4 rounds guaranteed success in every covert operation and made it a reliable standard issue of Arphilem strike force. Was often equipped with a silencer",
-  "scguns.desc.haretrot": "WIP Extra quiet, extra deadly. Strike Force of the Stellar Order ordered idk  Air-powered lead bolt launcher",
-  "scguns.desc.volter_sp": "WIP The first experiment of the Order with shockarms developed by the Volter. This easily concealable electric scatterpistol was popular amongst",
-  "scguns.desc.mactricia": "WIP Standard issue rifle of the Volter's Sector strike force,",
-  "scguns.desc.amperbreaker": "WIP",
-  "scguns.desc.jupiter-7": "Directed Redstone Flux energy conducted through an amethyst shard"
+  "scguns.desc.whirlwind": "Scientists, engineers, ministers. People who knew about the horrors happening in the Federacy and didn't stand aside, formed the Stellar Order to fight in the shadow.",
+  "scguns.desc.hermes": "A powerful hand cannon that helped the Stellar Order deal with paranormal activities inside the secret laboratories of the Federacy.",
+  "scguns.desc.avantrima": "Quick burst of 4 rounds guaranteed success in every covert operation and made it a reliable standard issue of Arphilem strike force subdivision.",
+  "scguns.desc.haretrot": "Extra quiet, extra deadly. Sharp lead bolts fired under the high pressure were able to penetrate any armor worn by the Asgharian forces.",
+  "scguns.desc.volter_sp": "First shockarm experiment of the Order; this easily concealable electric scatter pistol has proven to be a trusty sidearm.",
+  "scguns.desc.mactricia": "Standard Issue of the Volter's Sector strike force, a subdivision organized by the brilliant engineer and commander Volter to simplify the management of the Order.",
+  "scguns.desc.amperbreaker": "Production of this weapon was a pain to the Stellar Order, but that doesn't compare to the pain of those who had to suffer through the horrors of the soul harvesting.",
+  "scguns.desc.jupiter-7": "Directed Redstone flux energy conducted through the amethyst crystal creates a powerful light beam capable of scorching the enemy flesh."
 }

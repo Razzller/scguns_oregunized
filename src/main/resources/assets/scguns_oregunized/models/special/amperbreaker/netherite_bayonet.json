@@ -1,0 +1,59 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/amperbreaker"
+	},
+	"elements": [
+		{
+			"name": "netherite_bayonet",
+			"from": [7.98599, 1.125, 0.175],
+			"to": [7.98599, 2.675, 10.425],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"east": {"uv": [0, 2, 5.25, 2.75], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 5.25], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_bayonet",
+			"from": [7.23599, 1.7, 8.425],
+			"to": [8.73599, 3.2, 8.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [11, 3, 11.75, 3.75], "texture": "#0"},
+				"east": {"uv": [3.5, 14, 3.75, 14.75], "texture": "#0"},
+				"south": {"uv": [11, 7, 11.75, 7.75], "texture": "#0"},
+				"west": {"uv": [14, 3.5, 14.25, 4.25], "texture": "#0"},
+				"up": {"uv": [4.75, 14.25, 4, 14], "texture": "#0"},
+				"down": {"uv": [14.75, 4.5, 14, 4.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_bayonet",
+			"from": [7.61099, 1.7, 8.425],
+			"to": [8.36099, 2.7, 8.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [13, 9.5, 13.5, 10], "texture": "#0"},
+				"east": {"uv": [8.5, 14.5, 8.75, 15], "texture": "#0"},
+				"south": {"uv": [10, 13, 10.5, 13.5], "texture": "#0"},
+				"west": {"uv": [9, 14.5, 9.25, 15], "texture": "#0"},
+				"up": {"uv": [10.5, 14.75, 10, 14.5], "texture": "#0"},
+				"down": {"uv": [15, 10, 14.5, 10.25], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "netherite_bayonet",
+			"origin": [8, 0.475, 10.95],
+			"color": 8,
+			"children": [0, 1, 2]
+		}
+	]
+}

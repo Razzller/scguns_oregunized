@@ -1,0 +1,46 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/amperbreaker"
+	},
+	"elements": [
+		{
+			"name": "standard_grip",
+			"from": [7.51098, -1.9976, 16.03196],
+			"to": [8.46098, -1.6976, 17.63196],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.23599, 1.64419, 13.78294]},
+			"faces": {
+				"north": {"uv": [12.5, 14, 13, 14.25], "texture": "#0"},
+				"east": {"uv": [13.5, 10, 14.25, 10.25], "texture": "#0"},
+				"south": {"uv": [13, 14, 13.5, 14.25], "texture": "#0"},
+				"west": {"uv": [10.5, 13.5, 11.25, 13.75], "texture": "#0"},
+				"up": {"uv": [2, 13.25, 1.5, 12.5], "texture": "#0"},
+				"down": {"uv": [4.5, 12.5, 4, 13.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "standard_grip",
+			"from": [7.36099, 1.0635, 16.51106],
+			"to": [8.61099, 4.0635, 18.01106],
+			"rotation": {"angle": -45, "axis": "x", "origin": [7.98599, 2.5635, 17.31106]},
+			"faces": {
+				"north": {"uv": [7, 8, 7.75, 9.5], "texture": "#0"},
+				"east": {"uv": [8, 8, 8.75, 9.5], "texture": "#0"},
+				"south": {"uv": [8.5, 0, 9.25, 1.5], "texture": "#0"},
+				"west": {"uv": [0, 9, 0.75, 10.5], "texture": "#0"},
+				"up": {"uv": [12.25, 4.75, 11.5, 4], "texture": "#0"},
+				"down": {"uv": [5.75, 11.5, 5, 12.25], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "standard_grip",
+			"origin": [8.23599, -4.35581, 8.78294],
+			"color": 8,
+			"children": [0, 1]
+		}
+	]
+}

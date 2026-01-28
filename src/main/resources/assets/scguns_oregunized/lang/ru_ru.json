@@ -1,15 +1,30 @@
 {
+  "creativetab.scguns_oregunized_tab": "Oregunized",
   "item.scguns_oregunized.whirlwind": "Ветродуй",
   "item.scguns_oregunized.hermes": "Гермес",
-  "item.scguns_oregunized.avantrima": "Авантрима ПП",
+  "item.scguns_oregunized.avantrima": "Авантрима",
   "item.scguns_oregunized.haretrot": "Зайцедув",
   "item.scguns_oregunized.volter_sp": "Вольтер ДБ",
   "item.scguns_oregunized.mactricia": "Мактрисия",
   "item.scguns_oregunized.amperbreaker": "Ампертрон",
   "item.scguns_oregunized.jupiter-7": "Юпитер-7",
 
-  "item.scguns_oregunized.assasin_dagger": "Кинжал убийцы",
-  "item.scguns_oregunized.assasin_dagger.tooltip": "Легко скрываемый бритвенно-острый кинжал, часто используемый для убийств членами Ордена.",
+  "item.scguns_oregunized.assassin_dagger": "Кинжал убийцы",
+  "item.scguns_oregunized.assassin_dagger.tooltip": "Легко скрываемый бритвенно-острый кинжал, часто используемый для убийств членами Ордена.",
   "item.scguns_oregunized.stellar_order_blueprint": "Чертёж Звёздного Ордена",
-  "item.scguns_oregunized.electrum_gun_frame": "Электрумовая рама орудия"
+  "item.scguns_oregunized.electrum_gun_frame": "Электрумовая рама орудия",
+  "item.scguns_oregunized.stellar_order_flare": "Сигнальная ракета Ордена",
+  "effect.scguns_oregunized.overload": "Высокое напряжение",
+
+  "raid.scguns.stellar_order.name": "Призывает Звёздный Орден",
+  "raid.announcement.scguns_oregunized.stellar_order": "Ударная группа Звёдзного Ордена уже здесь!",
+
+  "scguns.desc.whirlwind": "Учёные, инженеры, министриы. Все люди, знавшие об ужасах, происходящих в Федерации и не оставшихся в стороне, сформировали Звёздный Орден, сражаясь в тени.",
+  "scguns.desc.hermes": "Мощная ручная пушка, помогавшая Звездному Ордену бороться с паранормальной активностью в секретных лабораториях Федерации.",
+  "scguns.desc.avantrima": "Быстрая очередь из 4 патронов гарантировала успех в любой тайной операции и сделала ее надежным стандартным оружием ударного отряда Арфилемов.",
+  "scguns.desc.haretrot": "Ещё тище, ещё смертоноснее. Острые свинцовые болты, выпущенные под высоким давлением, могли пробить любую броню, которую носили силы Асгара.",
+  "scguns.desc.volter_sp": "Первый эксперимент Ордена с шоковым оружием; Этот легко скрываемый электрический дробовик-пистолет зарекомендовал себя как надежное оружие.",
+  "scguns.desc.mactricia": "Стандартное оружие ударного отряда Сектора Вольтера, подразделения, организованного блестящим инженером и командиром Вольтером для упрощения управления Орденом.",
+  "scguns.desc.amperbreaker": "Производство этого оружия доставило Звездному Ордену немало хлопот, но это не сравнится с болью тех, кому пришлось пережить ужасы сбора душ.",
+  "scguns.desc.jupiter-7": "Направленная энергия Редстоуна, передаваемая через аметистовый кристалл, создает мощный световой луч, способный выжечь плоть врага."
 }

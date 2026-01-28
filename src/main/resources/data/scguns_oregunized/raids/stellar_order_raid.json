@@ -190,6 +190,13 @@
             "duration": -1,
             "ambient": true,
             "visible": false
+          },
+          {
+            "effect": "minecraft:speed",
+            "amplifier": 0,
+            "duration": -1,
+            "ambient": true,
+            "visible": false
           }
         ],
         "ai_difficulty": 4,

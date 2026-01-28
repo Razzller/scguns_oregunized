@@ -1,0 +1,57 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/amperbreaker"
+	},
+	"elements": [
+		{
+			"name": "vertical_grip",
+			"from": [7.31099, 2.48, 9.03625],
+			"to": [8.66099, 3.03, 10.56625],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [12.5, 13.5, 13.25, 13.75], "texture": "#0"},
+				"east": {"uv": [13.5, 12.5, 14.25, 12.75], "texture": "#0"},
+				"south": {"uv": [13.5, 13, 14.25, 13.25], "texture": "#0"},
+				"west": {"uv": [13.5, 13.5, 14.25, 13.75], "texture": "#0"},
+				"down": {"uv": [2.75, 11, 2, 11.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [3.48382, 0.7475, 11.25932],
+			"to": [4.38382, 2.5475, 12.15932],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.23599, 3.64419, 15.65794]},
+			"faces": {
+				"north": {"uv": [12, 9.5, 12.5, 10.5], "texture": "#0"},
+				"east": {"uv": [12, 10.5, 12.5, 11.5], "texture": "#0"},
+				"south": {"uv": [12, 11.5, 12.5, 12.5], "texture": "#0"},
+				"west": {"uv": [0, 12.5, 0.5, 13.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [3.39382, 0.2975, 11.16932],
+			"to": [4.47382, 0.7475, 12.24932],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.23599, 3.64419, 15.65794]},
+			"faces": {
+				"north": {"uv": [14.5, 5, 15, 5.25], "texture": "#0"},
+				"east": {"uv": [5.5, 14.5, 6, 14.75], "texture": "#0"},
+				"south": {"uv": [14.5, 5.5, 15, 5.75], "texture": "#0"},
+				"west": {"uv": [6, 14.5, 6.5, 14.75], "texture": "#0"},
+				"up": {"uv": [13.5, 6, 13, 5.5], "texture": "#0"},
+				"down": {"uv": [13.5, 6, 13, 6.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical_grip",
+			"origin": [8, 1.525, 9.7],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

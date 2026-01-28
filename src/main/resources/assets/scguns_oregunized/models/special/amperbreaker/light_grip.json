@@ -1,0 +1,45 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/amperbreaker"
+	},
+	"elements": [
+		{
+			"name": "light_grip",
+			"from": [7.11099, 2.675, 7.6],
+			"to": [8.86099, 3.175, 10.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [13, 6.5, 14, 6.75], "texture": "#0"},
+				"east": {"uv": [12.5, 4, 14, 4.25], "texture": "#0"},
+				"south": {"uv": [13, 7, 14, 7.25], "texture": "#0"},
+				"west": {"uv": [4.5, 12.5, 6, 12.75], "texture": "#0"},
+				"up": {"uv": [4, 7.5, 3, 6], "texture": "#0"},
+				"down": {"uv": [7, 3.5, 6, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "light_grip",
+			"from": [7.23599, 2.275, 7.675],
+			"to": [8.73599, 2.775, 10.675],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 11]},
+			"faces": {
+				"north": {"uv": [0, 14, 0.75, 14.25], "texture": "#0"},
+				"east": {"uv": [12.5, 4.5, 14, 4.75], "texture": "#0"},
+				"south": {"uv": [1, 14, 1.75, 14.25], "texture": "#0"},
+				"west": {"uv": [12.5, 5, 14, 5.25], "texture": "#0"},
+				"down": {"uv": [2.75, 8, 2, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "light_grip",
+			"origin": [8, 1.775, 9.575],
+			"color": 1,
+			"children": [0, 1]
+		}
+	]
+}
