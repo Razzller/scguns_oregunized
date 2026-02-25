@@ -1,5 +1,5 @@
 {
-  "name": "scguns_oregunized:radio_tower",
+  "name": "scguns_oregunized:radio_toilet",
 
   "fallback": "minecraft:empty",
 
@@ -8,7 +8,7 @@
       "weight": 1,
       "element": {
 
-        "location": "scguns_oregunized:radio_tower_tower",
+        "location": "scguns_oregunized:radio_tower_toilet",
 
         "processors": "minecraft:empty",
 

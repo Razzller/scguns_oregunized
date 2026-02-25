@@ -110,6 +110,11 @@ minecraft {
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
         }
     }
 }
@@ -168,6 +173,7 @@ dependencies {
     implementation fg.deobf("curse.maven:blueprint-382216:6408581")
     implementation fg.deobf("curse.maven:worldedit-225608:4586218")
     implementation fg.deobf("curse.maven:better-third-person-435044:4596768")
+    implementation fg.deobf("curse.maven:damage-number-998849:7060656")
 
 
     implementation fg.deobf("curse.maven:selene-499980:7119907")
@@ -246,4 +252,5 @@ tasks.withType(JavaCompile).configureEach {
 mixin {
     add sourceSets.main, "scguns_oregunized.refmap.json"
     config "scguns_oregunized.mixins.json"
+}
 }
