@@ -5,6 +5,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.razetka.scguns_oregunized.ScGunsOregunized;
+import net.razetka.scguns_oregunized.common.item.LeadRoundAmmoItem;
+import net.razetka.scguns_oregunized.common.item.SledgehammerItem;
 import top.ribs.scguns.init.ModSounds;
 import top.ribs.scguns.item.BlueprintItem;
 import top.ribs.scguns.item.RaidFlareItem;
@@ -14,7 +16,7 @@ import top.ribs.scguns.item.animated.AnimatedGunItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, ScGunsOregunized.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, ScGunsOregunized.MOD_ID);
 
     public static final RegistryObject<AnimatedGunItem> WHIRLWIND = ITEMS.register("whirlwind",
             () -> new AnimatedGunItem(
@@ -97,6 +99,21 @@ public class ModItems {
                     ModSounds.COPPER_GUN_JAM.get()    // Ejector sound release
             ));
 
+    public static final RegistryObject<AnimatedGunItem> CHIMERA_LMG = ITEMS.register("chimera_lmg",
+            () -> new AnimatedGunItem(
+                    new Item.Properties().stacksTo(1).durability(900),
+                    "chimera_lmg", // Model path
+                    ModSounds.MAG_OUT.get(),        // Reload sound mag out
+                    ModSounds.MAG_IN.get(),         // Reload sound mag in
+                    ModSounds.RELOAD_END.get(),           // Reload sound end
+                    ModSounds.COPPER_GUN_JAM.get(),      // Ejector sound pull
+                    ModSounds.COPPER_GUN_JAM.get()    // Ejector sound release
+            ));
+
+
+
+
+
     public static final RegistryObject<Item> STELLAR_ORDER_BLUEPRINT = ITEMS.register("stellar_order_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ELECTRUM_GUN_FRAME = ITEMS.register("electrum_gun_frame", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new TooltipItem(new Item.Properties().stacksTo(1),
@@ -104,6 +121,14 @@ public class ModItems {
             "item.scguns.found_in_raids"));
     public static final RegistryObject<Item> STELLAR_ORDER_FLARE = ITEMS.register("stellar_order_flare",
             () -> new RaidFlareItem(new Item.Properties().stacksTo(16),"stellar_order"));
+
+    public static final RegistryObject<SledgehammerItem> POTIN_SLEDGEHAMMER = ITEMS.register("potin_sledgehammer", () -> new SledgehammerItem(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_ROUND = ITEMS.register("lead_round", () -> new LeadRoundAmmoItem(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_SLUG = ITEMS.register("lead_slug", () -> new LeadRoundAmmoItem(new Item.Properties()));
+    public static final RegistryObject<Item> POTIN_INGOT = ITEMS.register("potin_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POTIN_NUGGET = ITEMS.register("potin_nugget", () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

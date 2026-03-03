@@ -8,9 +8,9 @@ import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import static net.razetka.scguns_oregunized.ScGunsOregunized.MODID;
+import static net.razetka.scguns_oregunized.ScGunsOregunized.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public enum OregunizedSpecialModels {
     WHIRLWIND_MAIN("whirlwind/main"),
     WHIRLWIND_STANDARD_MAG("whirlwind/standard_mag"),
@@ -97,7 +97,7 @@ public enum OregunizedSpecialModels {
      * @param modelName name of the model file
      */
     OregunizedSpecialModels(String modelName) {
-        this.modelLocation = new ResourceLocation(MODID, "special/" + modelName);
+        this.modelLocation = new ResourceLocation(MOD_ID, "special/" + modelName);
     }
 
     /**

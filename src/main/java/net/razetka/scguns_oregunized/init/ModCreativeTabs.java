@@ -10,11 +10,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import top.ribs.scguns.init.ModCreativeModeTabs;
 
-import static net.razetka.scguns_oregunized.ScGunsOregunized.MODID;
+import static net.razetka.scguns_oregunized.ScGunsOregunized.MOD_ID;
 import static top.ribs.scguns.init.ModCreativeModeTabs.CREATIVE_MODE_TABS;
 
 public class ModCreativeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> SCGUNS_OREGUNIZED_TAB = CREATIVE_MODE_TABS.register("scguns_oregunized_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MACTRICIA.get())).title(Component.translatable("creativetab.scguns_oregunized_tab")).displayItems((pParameters, pOutput) -> {
         addItemWithFullAmmo(pOutput, ModItems.WHIRLWIND.get());
@@ -29,6 +29,10 @@ public class ModCreativeTabs {
         addItem(pOutput, ModItems.STELLAR_ORDER_FLARE.get());
         addItem(pOutput, ModItems.ASSASSIN_DAGGER.get());
         addItem(pOutput, ModItems.STELLAR_ORDER_BLUEPRINT.get());
+        addItem(pOutput, ModItems.CHIMERA_LMG.get());
+        addItem(pOutput, ModItems.POTIN_SLEDGEHAMMER.get());
+        addItem(pOutput, ModItems.POTIN_INGOT.get());
+        addItem(pOutput, ModItems.POTIN_NUGGET.get());
     }).build());
 
     public static void register(IEventBus eventBus) {

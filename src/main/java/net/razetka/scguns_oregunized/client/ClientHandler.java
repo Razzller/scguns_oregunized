@@ -8,9 +8,9 @@ import net.razetka.scguns_oregunized.client.render.gun.model.*;
 import net.razetka.scguns_oregunized.init.ModItems;
 import top.ribs.scguns.client.render.gun.ModelOverrides;
 
-import static net.razetka.scguns_oregunized.ScGunsOregunized.MODID;
+import static net.razetka.scguns_oregunized.ScGunsOregunized.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
 public class ClientHandler {
     public static void registerClientHandlers(IEventBus bus) {
         bus.addListener(ClientHandler::onClientSetup);

@@ -10,12 +10,12 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.razetka.scguns_oregunized.client.ClientHandler;
 import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
+import net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity;
 import net.razetka.scguns_oregunized.events.ElectrumWeaponEventHandler;
 import net.razetka.scguns_oregunized.init.*;
 import org.slf4j.Logger;
@@ -23,11 +23,11 @@ import top.ribs.scguns.common.ProjectileManager;
 import top.ribs.scguns.entity.player.GunTierRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ScGunsOregunized.MODID)
+@Mod(ScGunsOregunized.MOD_ID)
 public class ScGunsOregunized
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "scguns_oregunized";
+    public static final String MOD_ID = "scguns_oregunized";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -40,6 +40,7 @@ public class ScGunsOregunized
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModParticleTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(ElectrumWeaponEventHandler.class);
@@ -59,6 +60,8 @@ public class ScGunsOregunized
         GunTierRegistry.register("stellar_order", 6, "stellar_order_gun_tier", 4);
 
         ProjectileManager.getInstance().registerFactory(OItems.LEAD_BOLT.get(), (worldIn, entity, weapon, item, modifiedGun) -> new DummyProjectileEntity(ModEntities.DUMMY_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_SLUG.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
     }
 
     // Add the example block item to the building blocks tab
@@ -75,7 +78,7 @@ public class ScGunsOregunized
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
