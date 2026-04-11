@@ -1,0 +1,44 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:ingots/copper"
+      },
+      {
+        "tag": "forge:raw_materials/copper"
+      }
+    ],
+    [
+      {
+        "item": "oreganized:lead_ingot"
+      },
+      {
+        "item": "oreganized:raw_lead"
+      }
+    ],
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "results": [
+    {
+      "item": "scguns_oregunized:mauvite_blend",
+      "count": 3
+    },
+    {
+      "chance": 0.1,
+      "item": "scguns_oregunized:mauvite_blend"
+    }
+  ]
+}

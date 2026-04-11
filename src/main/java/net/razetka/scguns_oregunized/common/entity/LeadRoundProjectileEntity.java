@@ -1,7 +1,9 @@
 package net.razetka.scguns_oregunized.common.entity;
 
 import galena.oreganized.index.OEffects;
+import galena.oreganized.index.OParticleTypes;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
@@ -14,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.razetka.scguns_oregunized.init.ModParticleTypes;
 import top.ribs.scguns.Config;
 import top.ribs.scguns.common.Gun;
 import top.ribs.scguns.entity.projectile.ProjectileEntity;
@@ -60,16 +63,15 @@ public class LeadRoundProjectileEntity extends ProjectileEntity {
         if (!blocked) {
             if (!(entity.getType().is(ModTags.Entities.GHOST) &&
                     !this.getProjectile().getAdvantage().equals(ModTags.Entities.UNDEAD.location()))) {
+                if (entity instanceof LivingEntity livingEntity && livingEntity.hasEffect(OEffects.STUNNING.get())) {
+                    damage *= net.razetka.scguns_oregunized.Config.COMMON.leadRoundDamageMultiplier.get();
+                    spawnParticles(entity, this.level());
+                }
                 if (damage > 0) {
                     entity.hurt(source, damage);
                 }
-
                 if (entity instanceof LivingEntity livingEntity) {
                     entity.invulnerableTime = 0;
-                    if (((LivingEntity) entity).hasEffect(OEffects.STUNNING.get())) {
-                        damage *= 1.5;
-                    }
-
                     ResourceLocation effectLocation = this.projectile.getImpactEffect();
                     if (effectLocation != null) {
                         float effectChance = this.projectile.getImpactEffectChance();
@@ -98,5 +100,26 @@ public class LeadRoundProjectileEntity extends ProjectileEntity {
         }
         PacketHandler.getPlayChannel().sendToTracking(() -> entity, new S2CMessageBlood(hitVec.x, hitVec.y, hitVec.z, entity.getType()));
 
+    }
+
+    public void spawnParticles(Entity entity, Level level) {
+        int count = 3;
+
+//        if (!entity.level().isClientSide()) {
+//            for (int i = 0; i < count; i++) {
+//                entity.level().addParticle(
+//                        ModParticleTypes.LEAD_HIT_PARTICLE.get(),
+//                        entity.getRandomX(0.75), entity.getRandomY(), entity.getRandomZ(0.75),
+//                        0, 0, 0);
+//            }
+//        }
+
+        if (!entity.level().isClientSide()) {
+            for (int i = 0; i < count; ++i) {
+                ((ServerLevel)level).sendParticles(ModParticleTypes.LEAD_HIT_PARTICLE.get(),
+                        entity.getRandomX(0.75), entity.getRandomY(), entity.getRandomZ(0.75),
+                        3, 0, 0, 0,0);
+            }
+        }
     }
 }

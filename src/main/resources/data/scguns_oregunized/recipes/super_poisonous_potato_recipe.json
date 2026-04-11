@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "L": {
+      "item": "oreganized:lead_ingot"
+    }
+  },
+    "pattern": [
+    "LLL",
+    "LPL",
+    "LLL"
+  ],
+  "result": {
+    "item": "scguns_oregunized:super_poisonous_potato",
+    "count": 1
+  }
+}

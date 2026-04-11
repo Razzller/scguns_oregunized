@@ -1,0 +1,33 @@
+{
+  "type": "scguns:powered_macerating",
+  "processingTime": 100,
+  "energyUse": 1000,
+  "ingredients": [
+    [
+      {
+        "item": "oreganized:lead_ingot"
+      },
+      {
+        "item": "oreganized:raw_lead"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "minecraft:raw_copper"
+      }
+    ],
+    {
+      "item": "minecraft:flint"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "item": "scguns_oregunized:mauvite_blend",
+    "count": 2
+  }
+}

@@ -35,7 +35,7 @@
     "recoilAngle": 2.5,
     "recoilKick": 1.5,
     "spread": 1.5,
-    "energyUse": 30.0,
+    "energyUse": 80.0,
     "criticalChance": 0.0,
     "advantage": "scguns:none",
     "damageFalloffStart": 12.0,

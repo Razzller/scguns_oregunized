@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "scguns_oregunized:mauvite_nugget"
+    },
+    "B": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+    "pattern": [
+    "BBB",
+    "BPB",
+    "BBB"
+  ],
+  "result": {
+    "item": "scguns_oregunized:mauvite_bricks",
+    "count": 8
+  }
+}

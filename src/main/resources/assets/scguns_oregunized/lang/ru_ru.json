@@ -9,11 +9,37 @@
   "item.scguns_oregunized.amperbreaker": "Ампертрон",
   "item.scguns_oregunized.jupiter-7": "Юпитер-7",
 
+  "item.scguns_oregunized.wolfhound": "Волкодав",
+  "item.scguns_oregunized.warthog": "Бородавочник",
+  "item.scguns_oregunized.centurion_smg": "Центурион ПП",
+  "item.scguns_oregunized.prospector": "Старатель",
+  "item.scguns_oregunized.chimera_lmg": "Химера",
+  "item.scguns_oregunized.apotheosis_lrr": "Апофеоз ЛЛР",
+  "item.scguns_oregunized.sabretusk": "Саблезуб",
+  "item.scguns_oregunized.nemesis": "Немезиз",
+
   "item.scguns_oregunized.assassin_dagger": "Кинжал убийцы",
   "item.scguns_oregunized.assassin_dagger.tooltip": "Легко скрываемый бритвенно-острый кинжал, часто используемый для убийств членами Ордена.",
   "item.scguns_oregunized.stellar_order_blueprint": "Чертёж Звёздного Ордена",
   "item.scguns_oregunized.electrum_gun_frame": "Электрумовая рама орудия",
   "item.scguns_oregunized.stellar_order_flare": "Сигнальная ракета Ордена",
+  "item.scguns_oregunized.lead_round": "Свинцовый патрон",
+  "item.scguns_oregunized.lead_slug": "Свинцовый жакан",
+  "item.scguns_oregunized.mauvite_blend": "Маувитовая смесь",
+  "item.scguns_oregunized.mauvite_ingot": "Маувитовый слиток",
+  "item.scguns_oregunized.mauvite_nugget": "Маувитовый самородок",
+  "block.scguns_oregunized.mauvite_block": "Маувитовый блок",
+  "item.scguns_oregunized.mauvite_gun_frame": "Маувитовая рама орудия",
+  "item.scguns_oregunized.lead_bomb": "Свинцовая бомба",
+  "item.lead_bomb.tooltip": "Внимание! Случайное время запала",
+  "item.scguns_oregunized.mauvite_sledgehammer": "Маувитовый молот",
+  "item.sledgehammer.tooltip": "Критическое попадание наносит повреждение мозга",
+  "item.scguns_oregunized.medium_mauvite_casing": "Средняя маувитовая гильза",
+  "item.scguns_oregunized.small_mauvite_casing": "Малая маувитовая гильза",
+  "item.scguns_oregunized.mauvite_helmet": "Мауитовый шлем",
+  "item.scguns_oregunized.mauvite_chestplate": "Мауитовый нагрудник",
+  "item.scguns_oregunized.mauvite_leggings": "Мауитовые поножи",
+  "item.scguns_oregunized.mauvite_boots": "Мауитовые ботинки",
   "effect.scguns_oregunized.overload": "Высокое напряжение",
 
   "raid.scguns.stellar_order.name": "Призывает Звёздный Орден",
@@ -26,5 +52,7 @@
   "scguns.desc.volter_sp": "Первый эксперимент Ордена с шоковым оружием; Этот легко скрываемый электрический дробовик-пистолет зарекомендовал себя как надежное оружие.",
   "scguns.desc.mactricia": "Стандартное оружие ударного отряда Сектора Вольтера, подразделения, организованного блестящим инженером и командиром Вольтером для упрощения управления Орденом.",
   "scguns.desc.amperbreaker": "Производство этого оружия доставило Звездному Ордену немало хлопот, но это не сравнится с болью тех, кому пришлось пережить ужасы сбора душ.",
-  "scguns.desc.jupiter-7": "Направленная энергия Редстоуна, передаваемая через аметистовый кристалл, создает мощный световой луч, способный выжечь плоть врага."
+  "scguns.desc.jupiter-7": "Направленная энергия Редстоуна, передаваемая через аметистовый кристалл, создает мощный световой луч, способный выжечь плоть врага.",
+
+  "tooltip.lead_round.description": "Наносит дополнительный урон по целям с эффектом повреждения мозга"
 }

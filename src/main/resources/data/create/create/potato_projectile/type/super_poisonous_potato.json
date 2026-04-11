@@ -1,0 +1,36 @@
+{
+  "damage": 8,
+  "items": "scguns_oregunized:super_poisonous_potato",
+  "knockback": 0.5,
+  "on_entity_hit": {
+    "type": "create:food_effects",
+    "food_property": {
+      "effects": [
+        {
+          "effect": {
+            "amplifier": 1,
+            "duration": 200,
+            "effect": "minecraft:poison"
+          },
+          "probability": 1.0
+        },
+        {
+          "effect": {
+            "amplifier": 0,
+            "duration": 300,
+            "effect": "oreganized:stunning"
+          },
+          "probability": 1.0
+        }
+      ],
+      "nutrition": 1,
+      "saturation_modifier": 0.1
+    },
+    "recoverable": false
+  },
+    "reload_ticks": 25,
+    "render_mode": {
+    "type": "create:tumble"
+      },
+    "velocity_multiplier": 0.85
+}

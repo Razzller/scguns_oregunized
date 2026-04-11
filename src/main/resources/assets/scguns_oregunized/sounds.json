@@ -23,5 +23,109 @@
         "name": "scguns_oregunized:item/volter_sp/fire"
       }
     ]
+  },
+  "item.electrum_pistol.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/electrum_pistol/fire"
+      }
+    ]
+  },
+  "item.electrum_pistol.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/electrum_pistol/silenced_fire"
+      }
+    ]
+  },
+  "item.potin_pistol.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/potin_pistol/fire"
+      }
+    ]
+  },
+  "item.potin_pistol.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/potin_pistol/silenced_fire"
+      }
+    ]
+  },
+  "item.prospector.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/fire"
+      }
+    ]
+  },
+  "item.prospector.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/silenced_fire"
+      }
+    ]
+  },
+  "item.prospector.enchanted_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/enchanted_fire"
+      }
+    ]
+  },
+  "item.chimera.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/chimera/fire"
+      }
+    ]
+  },
+  "item.chimera.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/chimera/silenced_fire"
+      }
+    ]
+  },
+  "item.apotheosis.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/apotheosis/fire"
+      }
+    ]
+  },
+  "item.apotheosis.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/apotheosis/silenced_fire"
+      }
+    ]
+  },
+  "item.mauvite_shotgun.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/mauvite_shotgun/fire"
+      }
+    ]
+  },
+  "item.mauvite_shotgun.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/mauvite_shotgun/silenced_fire"
+      }
+    ]
   }
 }

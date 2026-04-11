@@ -70,9 +70,9 @@
   },
   "sounds": {
     "cock": "scguns:item.pistol.cock",
-    "enchantedFire": "scguns:item.iron_pistol.fire",
-    "fire": "scguns:item.iron_pistol.fire",
+    "enchantedFire": "scguns_oregunized:item.electrum_pistol.fire",
+    "fire": "scguns_oregunized:item.electrum_pistol.fire",
     "reload": "scguns:item.gauss.reload",
-    "silencedFire": "scguns:item.bruiser.silenced_fire"
+    "silencedFire": "scguns_oregunized:item.electrum_pistol.silenced_fire"
   }
 }

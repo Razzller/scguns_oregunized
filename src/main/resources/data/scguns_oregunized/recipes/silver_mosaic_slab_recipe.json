@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "scguns_oregunized:silver_mosaic"
+    }
+  },
+    "pattern": [
+    "PPP"
+  ],
+  "result": {
+    "item": "scguns_oregunized:silver_mosaic_slab",
+    "count": 6
+  }
+}

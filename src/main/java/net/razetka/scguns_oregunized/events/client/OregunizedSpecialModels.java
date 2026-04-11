@@ -74,7 +74,28 @@ public enum OregunizedSpecialModels {
 
     JUPITER7_MAIN("jupiter7/main"),
     JUPITER7_NO_SIGHTS("jupiter7/no_sights"),
-    JUPITER7_SIGHTS("jupiter7/sights");
+    JUPITER7_SIGHTS("jupiter7/sights"),
+
+
+    PROSPECTOR_MAIN("prospector/main"),
+    PROSPECTOR_STANDARD_BARREL("prospector/standard_barrel"),
+    PROSPECTOR_EXTENDED_BARREL("prospector/extended_barrel"),
+    PROSPECTOR_SILENCER("prospector/silencer"),
+    PROSPECTOR_ADVANCED_SILENCER("prospector/advanced_silencer"),
+    PROSPECTOR_MUZZLE_BRAKE("prospector/muzzle_brake"),
+    PROSPECTOR_IRON_BAYONET("prospector/iron_bayonet"),
+    PROSPECTOR_ANTHRALITE_BAYONET("prospector/anthralite_bayonet"),
+    PROSPECTOR_DIAMOND_BAYONET("prospector/diamond_bayonet"),
+    PROSPECTOR_NETHERITE_BAYONET("prospector/netherite_bayonet"),
+    PROSPECTOR_LIGHT_GRIP("prospector/light_grip"),
+    PROSPECTOR_VERT_GRIP("prospector/vertical_grip"),
+    PROSPECTOR_DEFAULT_MAG("prospector/default_mag"),
+    PROSPECTOR_EXTENDED_MAG("prospector/extended_mag"),
+    PROSPECTOR_SPEED_MAG("prospector/speed_mag"),
+    PROSPECTOR_LIGHT_STOCK("prospector/light_stock"),
+    PROSPECTOR_WOODEN_STOCK("prospector/wooden_stock"),
+    PROSPECTOR_WEIGHTED_STOCK("prospector/weighted_stock");
+
 
 
 

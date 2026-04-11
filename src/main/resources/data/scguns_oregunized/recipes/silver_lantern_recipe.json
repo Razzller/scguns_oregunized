@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "oreganized:silver_nugget"
+    },
+    "E": {
+      "item": "minecraft:torch"
+    }
+  },
+    "pattern": [
+      "PPP",
+      "PEP",
+      "PPP"
+  ],
+  "result": {
+    "item": "scguns_oregunized:silver_lantern",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oreganized:silver_ingot"
+  },
+  "result": "scguns_oregunized:silver_mosaic",
+  "count": 4
+}

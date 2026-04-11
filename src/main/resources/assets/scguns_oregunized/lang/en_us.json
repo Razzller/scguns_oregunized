@@ -9,11 +9,39 @@
   "item.scguns_oregunized.amperbreaker": "Amperbreaker",
   "item.scguns_oregunized.jupiter-7": "Jupiter-7",
 
+  "item.scguns_oregunized.wolfhound": "Wolfhound",
+  "item.scguns_oregunized.warthog": "Warthog",
+  "item.scguns_oregunized.centurion_smg": "Centurion SMG",
+  "item.scguns_oregunized.prospector": "Prospector",
+  "item.scguns_oregunized.chimera_lmg": "Chimera LMG",
+  "item.scguns_oregunized.apotheosis_lrr": "Apotheosis LRR",
+  "item.scguns_oregunized.sabretusk": "Sabretusk",
+  "item.scguns_oregunized.nemesis": "Nemesis",
+  "item.scguns_oregunized.duster": "Duster",
+
   "item.scguns_oregunized.assassin_dagger": "Assassin's Dagger",
   "item.scguns_oregunized.assassin_dagger_tooltip": "An easily concealed, sharply honed dagger often used for the assassinations by members of the Order",
   "item.scguns_oregunized.stellar_order_blueprint": "Stellar Order Blueprint",
   "item.scguns_oregunized.electrum_gun_frame": "Electrum Gun Frame",
   "item.scguns_oregunized.stellar_order_flare": "Stellar Order Flare",
+
+  "item.scguns_oregunized.lead_round": "Lead Round",
+  "item.scguns_oregunized.lead_slug": "Lead Slug",
+  "item.scguns_oregunized.mauvite_blend": "Mauvite Blend",
+  "item.scguns_oregunized.mauvite_ingot": "Mauvite Ingot",
+  "item.scguns_oregunized.mauvite_nugget": "Mauvite Nugget",
+  "block.scguns_oregunized.mauvite_block": "Mauvite Block",
+  "item.scguns_oregunized.mauvite_gun_frame": "Mauvite Gun Frame",
+  "item.scguns_oregunized.lead_bomb": "Lead Bomb",
+  "item.lead_bomb.tooltip": "Warning! Random fuse time",
+  "item.scguns_oregunized.mauvite_sledgehammer": "Mauvite Sledgehammer",
+  "item.sledgehammer.tooltip": "Landing critical hits applies Brain Damage",
+  "item.scguns_oregunized.medium_mauvite_casing": "Medium Mauvite Casing",
+  "item.scguns_oregunized.small_mauvite_casing": "Small Mauvite Casing",
+  "item.scguns_oregunized.mauvite_helmet": "Mauvite Helmet",
+  "item.scguns_oregunized.mauvite_chestplate": "Mauvite Chestplate",
+  "item.scguns_oregunized.mauvite_leggings": "Mauvite Leggings",
+  "item.scguns_oregunized.mauvite_boots": "Mauvite Boots",
   "effect.scguns_oregunized.overload": "High-Voltage",
 
   "raid.scguns.stellar_order.name": "Summons the Stellar Order",
@@ -28,5 +56,9 @@
   "scguns.desc.amperbreaker": "Production of this weapon was a pain to the Stellar Order, but that doesn't compare to the pain of those who had to suffer through the horrors of the soul harvesting.",
   "scguns.desc.jupiter-7": "Directed Redstone flux energy conducted through the amethyst crystal creates a powerful light beam capable of scorching the enemy flesh.",
 
-  "tooltip.lead_round.description": "Deals extra damage to targets with Brain Damage effect"
+  "tooltip.lead_round.description": "Deals extra damage to targets with Brain Damage effect",
+  "tooltip.incendiary_round.description": "Sets on fire and deals extra damage to targets with Brain Damage effect",
+
+  "painting.scguns_oregunized.golden_cube.title": "The Golden Cube",
+  "painting.scguns_oregunized.golden_cube.author": "Razzller"
 }

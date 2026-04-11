@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "scguns_oregunized:mauvite_nugget"
+    },
+    "L": {
+      "item": "oreganized:lead_ingot"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+    "pattern": [
+    "PL ",
+    "PGR",
+    "PL "
+  ],
+  "result": {
+    "item": "scguns_oregunized:lead_bomb",
+    "count": 2
+  }
+}

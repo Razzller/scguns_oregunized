@@ -2,6 +2,8 @@ package net.razetka.scguns_oregunized;
 
 import com.mojang.logging.LogUtils;
 import galena.oreganized.index.OItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -9,13 +11,18 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.razetka.scguns_oregunized.attributes.ModAttributes;
 import net.razetka.scguns_oregunized.client.ClientHandler;
 import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
+import net.razetka.scguns_oregunized.common.entity.IncendiaryRoundProjectileEntity;
 import net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity;
+import net.razetka.scguns_oregunized.common.entity.mobs.ArgonautRenderer;
 import net.razetka.scguns_oregunized.events.ElectrumWeaponEventHandler;
 import net.razetka.scguns_oregunized.init.*;
 import org.slf4j.Logger;
@@ -41,6 +48,9 @@ public class ScGunsOregunized
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
         ModParticleTypes.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModPaintings.register(modEventBus);
+        ModAttributes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(ElectrumWeaponEventHandler.class);
@@ -51,8 +61,8 @@ public class ScGunsOregunized
 
         modEventBus.addListener(this::commonSetup);
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        // context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        Config.registerConfig();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -62,6 +72,8 @@ public class ScGunsOregunized
         ProjectileManager.getInstance().registerFactory(OItems.LEAD_BOLT.get(), (worldIn, entity, weapon, item, modifiedGun) -> new DummyProjectileEntity(ModEntities.DUMMY_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
         ProjectileManager.getInstance().registerFactory(ModItems.LEAD_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
         ProjectileManager.getInstance().registerFactory(ModItems.LEAD_SLUG.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+        ProjectileManager.getInstance().registerFactory(OItems.LEAD_NUGGET.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+        ProjectileManager.getInstance().registerFactory(ModItems.INCENDIARY_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) -> new IncendiaryRoundProjectileEntity(ModEntities.INCENDIARY_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
     }
 
     // Add the example block item to the building blocks tab
@@ -84,7 +96,8 @@ public class ScGunsOregunized
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.THROWING_CLUB.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.ARGONAUT.get(), ArgonautRenderer::new);
         }
     }
 }

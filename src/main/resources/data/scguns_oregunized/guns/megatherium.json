@@ -1,0 +1,83 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.0,
+      "yOffset": 4.9,
+      "zOffset": -7.9,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "lmg",
+    "fireMode": "scguns:automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 3,
+    "meleeDamage": 2.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 14,
+    "speedModifier": 0.75
+  },
+  "modules": {
+    "attachments": {
+      "barrel": {
+        "yOffset": 4.9,
+        "zOffset": -10.0
+      },
+      "scope": {
+        "size": 0.8,
+        "yOffset": 6.1,
+        "zOffset": 4.0
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "magazine": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.0,
+      "zOffset": 0.75
+    }
+  },
+  "projectile": {
+    "recoilAngle": 4.5,
+    "recoilKick": 2.0,
+    "spread": 2.5,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.1,
+    "advantage": "scguns:none",
+    "damage": 12.0,
+    "damageFalloffStart": 28.0,
+    "damageFalloffEnd": 65.0,
+    "damageFalloffMinMultiplier": 0.75,
+    "armorPen": 2.0,
+    "ejectsCasing": true,
+    "gravity": false,
+    "item": "scguns_oregunized:incendiary_round",
+    "casingType": "scguns_oregunized:medium_mauvite_casing",
+    "casingParticle": "scguns_oregunized:mauvite_casing",
+    "life": 45,
+    "size": 0.05,
+    "speed": 9.5,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 50,
+    "reloadItem": "scguns_oregunized:incendiary_round",
+    "reloadTimer": 125,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns_oregunized:item.chimera.fire",
+    "fire": "scguns_oregunized:item.chimera.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns_oregunized:item.chimera.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

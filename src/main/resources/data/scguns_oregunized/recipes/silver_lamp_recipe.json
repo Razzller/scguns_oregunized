@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "oreganized:silver_ingot"
+    },
+    "E": {
+      "item": "minecraft:redstone"
+    }
+  },
+    "pattern": [
+      " P ",
+      "PEP",
+      " P "
+  ],
+  "result": {
+    "item": "scguns_oregunized:silver_lamp",
+    "count": 4
+  }
+}

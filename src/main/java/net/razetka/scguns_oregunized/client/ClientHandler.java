@@ -32,5 +32,7 @@ public class ClientHandler {
         ModelOverrides.register(ModItems.MACTRICIA.get(), new MactriciaModel());
         ModelOverrides.register(ModItems.AMPERBREAKER.get(), new AmperbreakerModel());
         ModelOverrides.register(ModItems.JUPITER7.get(), new Jupiter7Model());
+
+        ModelOverrides.register(ModItems.PROSPECTOR.get(), new ProspectorModel());
     }
 }

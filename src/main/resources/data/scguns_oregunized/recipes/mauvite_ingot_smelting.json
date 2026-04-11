@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "scguns_oregunized:mauvite_blend"
+  },
+  "result": "scguns_oregunized:mauvite_ingot"
+}

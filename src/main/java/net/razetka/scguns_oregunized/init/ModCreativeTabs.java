@@ -25,23 +25,62 @@ public class ModCreativeTabs {
         addItemWithFullAmmo(pOutput, ModItems.MACTRICIA.get());
         addItemWithFullAmmo(pOutput, ModItems.AMPERBREAKER.get());
         addItemWithFullAmmo(pOutput, ModItems.JUPITER7.get());
-        addItem(pOutput, ModItems.ELECTRUM_GUN_FRAME.get());
-        addItem(pOutput, ModItems.STELLAR_ORDER_FLARE.get());
-        addItem(pOutput, ModItems.ASSASSIN_DAGGER.get());
-        addItem(pOutput, ModItems.STELLAR_ORDER_BLUEPRINT.get());
-        addItem(pOutput, ModItems.CHIMERA_LMG.get());
-        addItem(pOutput, ModItems.POTIN_SLEDGEHAMMER.get());
-        addItem(pOutput, ModItems.POTIN_INGOT.get());
-        addItem(pOutput, ModItems.POTIN_NUGGET.get());
+        pOutput.accept(ModItems.ESD_GRENADE.get());
+        pOutput.accept(ModItems.ELECTRUM_GUN_FRAME.get());
+        pOutput.accept(ModItems.STELLAR_ORDER_FLARE.get());
+        pOutput.accept(ModItems.ASSASSIN_DAGGER.get());
+        pOutput.accept(ModItems.STELLAR_ORDER_BLUEPRINT.get());
+        pOutput.accept(ModBlocks.SILVER_PILLAR.get());
+        pOutput.accept(ModBlocks.CHISELED_SILVER.get());
+        pOutput.accept(ModBlocks.SILVER_MOSAIC.get());
+        pOutput.accept(ModBlocks.SILVER_MOSAIC_STAIRS.get());
+        pOutput.accept(ModBlocks.SILVER_MOSAIC_SLAB.get());
+        pOutput.accept(ModBlocks.SILVER_LAMP.get());
+        pOutput.accept(ModBlocks.SILVER_LANTERN.get());
+        pOutput.accept(ModBlocks.SILVER_BARS.get());
+        addItemWithFullAmmo(pOutput, ModItems.WOLFHOUND.get());
+        addItemWithFullAmmo(pOutput, ModItems.WARTHOG.get());
+        addItemWithFullAmmo(pOutput, ModItems.CENTURION_SMG.get());
+        addItemWithFullAmmo(pOutput, ModItems.PROSPECTOR.get());
+        addItemWithFullAmmo(pOutput, ModItems.CHIMERA_LMG.get());
+        addItemWithFullAmmo(pOutput, ModItems.APOTHEOSIS_LRR.get());
+        addItemWithFullAmmo(pOutput, ModItems.SABRETUSK.get());
+        addItemWithFullAmmo(pOutput, ModItems.NEMESIS.get());
+        addItemWithFullAmmo(pOutput, ModItems.MEGATHERIUM.get());
+        addItemWithFullAmmo(pOutput, ModItems.DUSTER.get());
+        pOutput.accept(ModItems.MAUVITE_BLUDGEON.get());
+        pOutput.accept(ModItems.MAUVITE_SLEDGEHAMMER.get());
+        pOutput.accept(ModItems.LEAD_BOMB.get());
+        pOutput.accept(ModItems.THROWING_CLUB.get());
+        pOutput.accept(ModItems.MAUVITE_HELMET.get());
+        pOutput.accept(ModItems.MAUVITE_CHESTPLATE.get());
+        pOutput.accept(ModItems.MAUVITE_LEGGINGS.get());
+        pOutput.accept(ModItems.MAUVITE_BOOTS.get());
+        pOutput.accept(ModItems.LEAD_ROUND.get());
+        pOutput.accept(ModItems.LEAD_SLUG.get());
+        pOutput.accept(ModItems.INCENDIARY_ROUND.get());
+        pOutput.accept(ModItems.SMALL_MAUVITE_CASING.get());
+        pOutput.accept(ModItems.MEDIUM_MAUVITE_CASING.get());
+        pOutput.accept(ModItems.LARGE_MAUVITE_CASING.get());
+        pOutput.accept(ModItems.MAUVITE_GUN_FRAME.get());
+        pOutput.accept(ModItems.MAUVITE_BLEND.get());
+        pOutput.accept(ModItems.MAUVITE_INGOT.get());
+        pOutput.accept(ModItems.MAUVITE_NUGGET.get());
+        pOutput.accept(ModBlocks.MAUVITE_BLOCK.get());
+        pOutput.accept(ModBlocks.MAUVITE_BRICKS.get());
+        pOutput.accept(ModBlocks.MAUVITE_BRICK_STAIRS.get());
+        pOutput.accept(ModBlocks.MAUVITE_BRICK_SLAB.get());
+        pOutput.accept(ModBlocks.MAUVITE_BRICK_WALL.get());
+        pOutput.accept(ModBlocks.MAUVITE_BUTTON.get());
+        pOutput.accept(ModBlocks.MAUVITE_PRESSURE_PLATE.get());
+        pOutput.accept(ModItems.SUPER_POISONOUS_POTATO.get());
+        //pOutput.accept(ModItems.ARGONAUT_SPAWN_EGG.get());
     }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 
-    private static void addItem(CreativeModeTab.Output output, Item item) {
-        output.accept(item);
-    }
 
     private static void addItemWithFullAmmo(CreativeModeTab.Output output, Item item) {
         ModCreativeModeTabs.CreativeTabHelper.addItemWithFullAmmo(output, item);

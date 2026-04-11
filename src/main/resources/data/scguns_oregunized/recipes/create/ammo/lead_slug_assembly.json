@@ -1,0 +1,72 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredient": {
+    "item": "scguns_oregunized:medium_mauvite_casing"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "scguns_oregunized:lead_slug"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        },
+        [
+          {
+            "item": "scguns:gunpowder_dust"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        },
+        [
+          {
+            "item": "oreganized:lead_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        }
+      ],
+      "results": [
+        {
+          "item": "scguns_oregunized:unfinished_lead_slug"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "scguns_oregunized:unfinished_lead_slug"
+  }
+}

@@ -11,10 +11,10 @@
 
   "step": "surface_structures",
 
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
 
   "start_height": {
-    "absolute": -2
+    "absolute": -4
   },
 
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
