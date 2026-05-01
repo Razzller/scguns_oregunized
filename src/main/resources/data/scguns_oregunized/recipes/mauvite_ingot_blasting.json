@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "group": "iron_ingot",
+  "experience": 0.7,
+  "ingredient": {
+    "item": "scguns_oregunized:mauvite_blend"
+  },
+  "result": "scguns_oregunized:mauvite_ingot"
+}

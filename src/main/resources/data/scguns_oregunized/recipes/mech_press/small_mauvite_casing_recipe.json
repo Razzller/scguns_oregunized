@@ -1,0 +1,16 @@
+{
+  "type": "scguns:mechanical_pressing",
+  "processingTime": 50,
+  "ingredients": [
+    {
+      "item": "scguns_oregunized:mauvite_ingot"
+    }
+  ],
+  "mold": {
+    "item": "scguns:small_casing_mold"
+  },
+  "result": {
+    "item": "scguns_oregunized:small_mauvite_casing",
+    "count": 14
+  }
+}

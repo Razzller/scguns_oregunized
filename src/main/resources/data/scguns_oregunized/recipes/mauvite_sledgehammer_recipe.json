@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "scguns_oregunized:mauvite_ingot"
+    },
+    "B": {
+      "item": "scguns_oregunized:mauvite_block"
+    },
+    "L": {
+      "item": "oreganized:lead_ingot"
+    }
+  },
+  "pattern": [
+    "IBI",
+    " L ",
+    " L "
+  ],
+  "result": {
+    "item": "scguns_oregunized:mauvite_sledgehammer"
+  }
+}

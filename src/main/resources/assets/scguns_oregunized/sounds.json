@@ -23,5 +23,191 @@
         "name": "scguns_oregunized:item/volter_sp/fire"
       }
     ]
+  },
+  "item.electrum_pistol.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/electrum_pistol/fire"
+      }
+    ]
+  },
+  "item.electrum_pistol.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/electrum_pistol/silenced_fire"
+      }
+    ]
+  },
+  "item.potin_pistol.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/potin_pistol/fire"
+      }
+    ]
+  },
+  "item.potin_pistol.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/potin_pistol/silenced_fire"
+      }
+    ]
+  },
+  "item.prospector.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/fire"
+      }
+    ]
+  },
+  "item.prospector.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/silenced_fire"
+      }
+    ]
+  },
+  "item.prospector.enchanted_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/prospector/enchanted_fire"
+      }
+    ]
+  },
+  "item.chimera.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/chimera/fire"
+      }
+    ]
+  },
+  "item.chimera.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/chimera/silenced_fire"
+      }
+    ]
+  },
+  "item.apotheosis.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/apotheosis/fire"
+      }
+    ]
+  },
+  "item.apotheosis.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/apotheosis/silenced_fire"
+      }
+    ]
+  },
+  "item.mauvite_shotgun.fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/mauvite_shotgun/fire"
+      }
+    ]
+  },
+  "item.mauvite_shotgun.silenced_fire": {
+    "subtitle": "subtitle.scguns.fire",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:item/mauvite_shotgun/silenced_fire"
+      }
+    ]
+  },
+
+
+
+  "entity.arphilem.idle": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_idle",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle1"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle2"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle3"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle4"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle5"
+      }
+    ]
+  },
+  "entity.arphilem.hurt": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_hurt",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt1"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt2"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt3"
+      }
+    ]
+  },
+  "entity.arphilem.death": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_death",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/death"
+      }
+    ]
+  },
+
+  "entity.tirone.idle": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_idle",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/idle1"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/idle2"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/idle3"
+      }
+    ]
+  },
+  "entity.tirone.hurt": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_hurt",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt1"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt2"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt3"
+      }
+    ]
+  },
+  "entity.tirone.death": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_death",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/death1"
+      }
+    ]
   }
 }

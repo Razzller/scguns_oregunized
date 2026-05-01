@@ -16,11 +16,5 @@ public class OverloadEffect extends MobEffect {
 
         this.addAttributeModifier(Attributes.MOVEMENT_SPEED, "d8d6b257-820d-4268-9994-c70f0e9feb1f", 0.2, AttributeModifier.Operation.MULTIPLY_BASE);
         // There's only jump height attribute for the horses >:(
-        this.addAttributeModifier(Attributes.ATTACK_SPEED, "d333dcc3-d015-4c6f-bbfc-509925c214a0", 0.2, AttributeModifier.Operation.MULTIPLY_BASE);
-        this.addAttributeModifier(SCAttributes.RELOAD_SPEED, "ce0046c1-73d5-4b8f-9465-85b4f7488b8b", 0.5, AttributeModifier.Operation.ADDITION);
-    }
-
-    private void addAttributeModifier(RegistryObject<Attribute> reloadSpeed, String uuid, double pAmount, AttributeModifier.Operation operation) {
-        //TODO Fix this when you'll figure this out, idk what I need here
     }
 }

@@ -1,0 +1,48 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/tirone_smg",
+		"particle": "scguns_oregunized:item/tirone_smg"
+	},
+	"elements": [
+		{
+			"name": "standard_barrel",
+			"from": [7.34393, 3.64767, 7.67733],
+			"to": [8.59393, 4.89767, 8.17733],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.89393, 4.19767, 6.60233]},
+			"faces": {
+				"north": {"uv": [7, 10, 7.75, 10.75], "texture": "#0"},
+				"east": {"uv": [12.5, 9, 12.75, 9.75], "texture": "#0"},
+				"south": {"uv": [8, 10, 8.75, 10.75], "texture": "#0"},
+				"west": {"uv": [9.5, 12.5, 9.75, 13.25], "texture": "#0"},
+				"up": {"uv": [10.75, 12.75, 10, 12.5], "texture": "#0"},
+				"down": {"uv": [13.25, 10, 12.5, 10.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "standard_barrel",
+			"from": [7.46287, 3.87267, 8.17733],
+			"to": [8.41287, 4.82267, 11.20233],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.78787, 4.19767, -0.07267]},
+			"faces": {
+				"north": {"uv": [9, 10.5, 9.5, 11], "texture": "#0"},
+				"east": {"uv": [8.5, 2, 10, 2.5], "texture": "#0"},
+				"south": {"uv": [10, 12, 10.5, 12.5], "texture": "#0"},
+				"west": {"uv": [9, 8.5, 10.5, 9], "texture": "#0"},
+				"up": {"uv": [9.5, 10.5, 9, 9], "texture": "#0"},
+				"down": {"uv": [0.5, 9.5, 0, 11], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "standard_barrel",
+			"origin": [7.78787, -3.95233, -1.14767],
+			"scope": 0,
+			"color": 3,
+			"children": [0, 1]
+		}
+	]
+}

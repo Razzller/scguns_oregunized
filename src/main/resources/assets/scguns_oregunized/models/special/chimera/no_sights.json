@@ -1,0 +1,47 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"3": "scguns_oregunized:item/chimera"
+	},
+	"elements": [
+		{
+			"name": "no_sights",
+			"from": [6.73599, 5.52266, 14.57733],
+			"to": [7.73599, 6.02266, 17.57733],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.23599, 5.77266, 15.57733]},
+			"faces": {
+				"north": {"uv": [8.25, 7.75, 8.375, 8], "rotation": 270, "texture": "#3"},
+				"east": {"uv": [7.625, 6, 7.5, 5.25], "rotation": 90, "texture": "#3"},
+				"south": {"uv": [8.25, 8, 8.375, 8.25], "rotation": 90, "texture": "#3"},
+				"west": {"uv": [5.625, 7.5, 5.5, 8.25], "rotation": 90, "texture": "#3"},
+				"up": {"uv": [6.5, 2.25, 7.25, 2.5], "rotation": 90, "texture": "#3"},
+				"down": {"uv": [6.5, 2, 7.25, 2.25], "rotation": 90, "texture": "#3"}
+			}
+		},
+		{
+			"name": "no_sights",
+			"from": [6.78599, 5.39766, 14.62733],
+			"to": [7.78599, 5.89766, 17.52733],
+			"rotation": {"angle": -45, "axis": "z", "origin": [6.98599, 5.52266, 16.07733]},
+			"faces": {
+				"north": {"uv": [8.25, 8.25, 8.5, 8.375], "texture": "#3"},
+				"east": {"uv": [7.5, 3.75, 8.25, 3.875], "texture": "#3"},
+				"south": {"uv": [8.5, 0, 8.75, 0.125], "texture": "#3"},
+				"west": {"uv": [7.5, 6, 8.25, 6.125], "texture": "#3"},
+				"up": {"uv": [1.5, 7.25, 1.25, 6.5], "texture": "#3"},
+				"down": {"uv": [1.75, 6.5, 1.5, 7.25], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "no_sights",
+			"origin": [7.98599, -3.85234, 10.37733],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

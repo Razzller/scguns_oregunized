@@ -1,0 +1,23 @@
+{
+  "type": "create:deploying",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "scguns_oregunized:mauvite_ingot"
+    },
+    {
+      "item": "scguns:small_casing_mold"
+    }
+  ],
+  "results": [
+    {
+      "item": "scguns_oregunized:small_mauvite_casing",
+      "count": 14
+    }
+  ]
+}

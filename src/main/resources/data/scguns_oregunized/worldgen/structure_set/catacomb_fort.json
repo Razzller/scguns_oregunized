@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "scguns_oregunized:catacomb_fort",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 4076213,
+    "spacing": 50,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

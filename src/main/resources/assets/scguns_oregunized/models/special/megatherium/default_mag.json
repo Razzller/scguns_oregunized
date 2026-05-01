@@ -1,0 +1,47 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/megatherium"
+	},
+	"elements": [
+		{
+			"name": "default_mag",
+			"from": [7.375, 0.9477, 6.05736],
+			"to": [8.625, 3.4477, 13.05736],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [9.5, 1.375, 9.875, 2], "texture": "#0"},
+				"east": {"uv": [9.125, 0.75, 10.875, 1.375], "texture": "#0"},
+				"south": {"uv": [9.125, 1.375, 9.5, 2], "texture": "#0"},
+				"west": {"uv": [9.125, 0, 10.875, 0.75], "texture": "#0"},
+				"up": {"uv": [8.75, 0, 9.125, 1.75], "texture": "#0"},
+				"down": {"uv": [8.75, 1.75, 9.125, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "default_mag",
+			"from": [7.25, 0.4477, 5.93236],
+			"to": [8.75, 0.9477, 13.18236],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [12.375, 0.375, 12.75, 0.5], "texture": "#0"},
+				"east": {"uv": [11.25, 0, 13.125, 0.125], "texture": "#0"},
+				"south": {"uv": [12.375, 0.25, 12.75, 0.375], "texture": "#0"},
+				"west": {"uv": [11.25, 0.125, 13.125, 0.25], "texture": "#0"},
+				"up": {"uv": [12.75, 0.25, 13.125, 2.125], "texture": "#0"},
+				"down": {"uv": [12.75, 0.25, 13.125, 2.125], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "default_mag",
+			"origin": [7.9875, -5.17733, 9.32733],
+			"scope": 0,
+			"color": 8,
+			"children": [0, 1]
+		}
+	]
+}

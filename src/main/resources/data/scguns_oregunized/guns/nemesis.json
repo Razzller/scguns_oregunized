@@ -1,0 +1,84 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.35,
+      "yOffset": 4.0,
+      "zOffset": -9.2,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "shotgun",
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 17,
+    "meleeDamage": 3.0,
+    "meleeReach": 3.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 30
+  },
+  "modules": {
+    "attachments": {
+      "barrel": {
+        "yOffset": 4.0,
+        "zOffset": -11.5
+      },
+      "scope": {
+        "yOffset": 6.25,
+        "zOffset": 1.35
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "underBarrel": {
+        "yOffset": 1.0,
+        "zOffset": 1.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.6,
+      "zOffset": 1.25
+    }
+  },
+  "projectile": {
+    "projectileAmount": 16,
+    "alwaysSpread": true,
+    "recoilAngle": 12.5,
+    "recoilKick": 4.0,
+    "spread": 7.5,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.35,
+    "knockbackStrength": 0.65,
+    "advantage": "scguns:none",
+    "damage": 24.0,
+    "damageFalloffStart": 7.0,
+    "damageFalloffEnd": 18.0,
+    "damageFalloffMinMultiplier": 0.35,
+    "ejectsCasing": true,
+    "item": "scguns_oregunized:incendiary_round",
+    "casingType": "scguns_oregunized:medium_mauvite_casing",
+    "casingParticle": "scguns_oregunized:mauvite_casing",
+    "life": 40,
+    "size": 0.05,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0,
+    "trailThickness": 0.5
+  },
+  "reloads": {
+    "emptyMagTimer": 50,
+    "maxAmmo": 6,
+    "reloadItem": "scguns_oregunized:incendiary_round",
+    "reloadTimer": 20,
+    "reloadType": "scguns:manual"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns_oregunized:item.mauvite_shotgun.fire",
+    "silencedFire": "scguns_oregunized:item.mauvite_shotgun.silenced_fire",
+    "fire": "scguns_oregunized:item.mauvite_shotgun.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

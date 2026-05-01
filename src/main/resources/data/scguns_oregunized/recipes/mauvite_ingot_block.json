@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "scguns_oregunized:mauvite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "scguns_oregunized:mauvite_ingot"
+  }
+}

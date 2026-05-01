@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "scguns_oregunized:mauvite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+    "pattern": [
+    "M",
+    "S"
+  ],
+  "result": {
+    "item": "scguns_oregunized:throwing_club",
+    "count": 2
+  }
+}

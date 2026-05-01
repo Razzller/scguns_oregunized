@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "scguns_oregunized:silver_mosaic"
+  },
+  "result": "scguns_oregunized:silver_mosaic_stairs",
+  "count": 1
+}

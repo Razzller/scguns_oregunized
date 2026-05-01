@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "scguns_oregunized:item/mauvite_sledgehammer_handheld",
+    "textures": {
+      "layer0": "scguns_oregunized:item/mauvite_sledgehammer"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scguns_oregunized:item/mauvite_sledgehammer_gui"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "display": {
+    "flash": {
+      "size": 0.7,
+      "yOffset": 4.5,
+      "zOffset": -9.3,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "rifle",
+    "fireMode": "scguns:burst",
+    "burstAmount": 3,
+    "burstCooldown": 7,
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 3,
+    "meleeDamage": 2.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 14,
+    "isSilenced": true
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.8,
+        "yOffset": 6.35,
+        "zOffset": 5.2
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "underBarrel": {
+        "yOffset": 5.5,
+        "zOffset": -2.5
+      },
+      "magazine": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.8,
+      "zOffset": 1.25
+    }
+  },
+  "projectile": {
+    "recoilAngle": 2.75,
+    "recoilKick": 1.25,
+    "spread": 1.0,
+    "criticalChance": 0.1,
+    "advantage": "scguns:water",
+    "damage": 11.0,
+    "damageFalloffStart": 25.0,
+    "damageFalloffEnd": 50.0,
+    "damageFalloffMinMultiplier": 0.7,
+    "armorPen": 2.5,
+    "ejectsCasing": true,
+    "gravity": true,
+    "item": "scguns:frog_dart",
+    "casingType": "scguns:small_iron_casing",
+    "casingParticle": "scguns:iron_casing",
+    "life": 45,
+    "size": 0.05,
+    "speed": 6.0,
+    "trailThickness": 0.5,
+    "trailLengthMultiplier": 2.0,
+    "impactEffect": "scguns:lacerated",
+    "impactEffectDuration": 300,
+    "impactEffectChance": 0.4,
+    "impactEffectAmplifier": 0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 18,
+    "reloadTimer": 90,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.airgun.fire_2",
+    "fire": "scguns:item.airgun.fire_2",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.bruiser.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

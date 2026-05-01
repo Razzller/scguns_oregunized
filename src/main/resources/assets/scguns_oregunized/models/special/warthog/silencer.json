@@ -1,0 +1,75 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/warthog"
+	},
+	"elements": [
+		{
+			"name": "silencer",
+			"from": [7.41987, 3.64314, 0.85731],
+			"to": [8.69387, 4.91714, 1.38056],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.05687, 4.21189, 1.80144]},
+			"faces": {
+				"north": {"uv": [11, 1.5, 11.75, 2.25], "texture": "#0"},
+				"east": {"uv": [12.5, 1.5, 12.75, 2.25], "texture": "#0"},
+				"south": {"uv": [2, 11, 2.75, 11.75], "texture": "#0"},
+				"west": {"uv": [4.5, 12.5, 4.75, 13.25], "texture": "#0"},
+				"up": {"uv": [13.25, 2.75, 12.5, 2.5], "texture": "#0"},
+				"down": {"uv": [13.25, 5.5, 12.5, 5.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "silencer",
+			"from": [7.19238, 3.41564, 1.38056],
+			"to": [8.94238, 5.16564, 5.38056],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.05687, 4.21189, 3.07469]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1.5, 10.5], "texture": "#0"},
+				"east": {"uv": [0, 3.5, 2, 4.5], "texture": "#0"},
+				"south": {"uv": [9.5, 1, 10.5, 2], "texture": "#0"},
+				"west": {"uv": [0, 4.5, 2, 5.5], "texture": "#0"},
+				"up": {"uv": [1, 7.5, 0, 5.5], "texture": "#0"},
+				"down": {"uv": [2, 5.5, 1, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "silencer",
+			"from": [6.78287, 2.55339, 3.54106],
+			"to": [6.78287, 4.28239, 3.99606],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"east": {"uv": [5, 12.5, 5.25, 13.25], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"west": {"uv": [6.5, 12.5, 6.75, 13.25], "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 0.25], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "silencer",
+			"from": [9.21712, 2.98339, 3.06331],
+			"to": [9.21712, 4.25739, 3.51831],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"east": {"uv": [7, 12.5, 7.25, 13.25], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0.75], "texture": "#0"},
+				"west": {"uv": [7.5, 12.5, 7.75, 13.25], "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 0.25], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0.25], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "silencer",
+			"origin": [8.00997, 2.28, 8.175],
+			"scope": 0,
+			"color": 1,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "scguns_oregunized:centurion",
+  "equipment_chance": 1.0,
+  "items": [
+    {
+      "item": "scguns_oregunized:prospector",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:chimera",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:apotheosis",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:sabretusk",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    }
+  ]
+}

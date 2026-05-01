@@ -2,6 +2,7 @@ package net.razetka.scguns_oregunized;
 
 import com.mojang.logging.LogUtils;
 import galena.oreganized.index.OItems;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,14 +14,24 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.razetka.scguns_oregunized.attributes.ModAttributes;
 import net.razetka.scguns_oregunized.client.ClientHandler;
 import net.razetka.scguns_oregunized.common.entity.DummyProjectileEntity;
+import net.razetka.scguns_oregunized.common.entity.IncendiaryRoundProjectileEntity;
 import net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity;
 import net.razetka.scguns_oregunized.events.ElectrumWeaponEventHandler;
 import net.razetka.scguns_oregunized.init.*;
 import org.slf4j.Logger;
+import top.ribs.scguns.client.screen.BlueprintScreen;
 import top.ribs.scguns.common.ProjectileManager;
 import top.ribs.scguns.entity.player.GunTierRegistry;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static net.razetka.scguns_oregunized.init.ModItems.HERMES;
+import static net.razetka.scguns_oregunized.init.ModItems.WHIRLWIND;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ScGunsOregunized.MOD_ID)
@@ -41,27 +52,47 @@ public class ScGunsOregunized
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
         ModParticleTypes.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModAttributes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(ElectrumWeaponEventHandler.class);
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             ClientHandler.registerClientHandlers(modEventBus);
+            BlueprintScreen.registerLoreOnlyItem(new ResourceLocation(MOD_ID, "union_blueprint"), "sabretusk");
+            BlueprintScreen.registerGunOrder(List.of(
+                    "whirlwind", "hermes", "avantrima", "jackrabbit", "canter", "haretrot", "volter_sp", "mactricia", "amperbreaker", "jupiter-7",
+
+                    "wolfhound", "warthog", "tirone_smg", "tirone_conversion", "prospector", "chimera", "apotheosis", "nemesis", "megatherium", "duster", "trenchbroom", "sabretusk"
+                    ));
         });
 
         modEventBus.addListener(this::commonSetup);
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        // context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        Config.registerConfig();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         GunTierRegistry.register("stellar_order", 6, "stellar_order_gun_tier", 4);
+        GunTierRegistry.register("white_wolf", 4, "union_gun_tier", 3);
 
-        ProjectileManager.getInstance().registerFactory(OItems.LEAD_BOLT.get(), (worldIn, entity, weapon, item, modifiedGun) -> new DummyProjectileEntity(ModEntities.DUMMY_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
-        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
-        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_SLUG.get(), (worldIn, entity, weapon, item, modifiedGun) -> new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+        ProjectileManager.getInstance().registerFactory(OItems.LEAD_BOLT.get(), (worldIn, entity, weapon, item, modifiedGun) ->
+                new DummyProjectileEntity(ModEntities.DUMMY_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+
+        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) ->
+                new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+
+        ProjectileManager.getInstance().registerFactory(ModItems.LEAD_SLUG.get(), (worldIn, entity, weapon, item, modifiedGun) ->
+                new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+
+        ProjectileManager.getInstance().registerFactory(OItems.LEAD_NUGGET.get(), (worldIn, entity, weapon, item, modifiedGun) ->
+                new LeadRoundProjectileEntity(ModEntities.LEAD_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
+
+        ProjectileManager.getInstance().registerFactory(ModItems.INCENDIARY_ROUND.get(), (worldIn, entity, weapon, item, modifiedGun) ->
+                new IncendiaryRoundProjectileEntity(ModEntities.INCENDIARY_ROUND_PROJECTILE.get(), worldIn, entity, weapon, item, modifiedGun));
     }
 
     // Add the example block item to the building blocks tab
@@ -82,9 +113,8 @@ public class ScGunsOregunized
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(ModItems::setupTabEditors);
         }
     }
 }

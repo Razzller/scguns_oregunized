@@ -1,0 +1,89 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/warthog"
+	},
+	"elements": [
+		{
+			"name": "weighted_stock",
+			"from": [7.36099, 2.77267, 20.07733],
+			"to": [8.61099, 4.77267, 22.57733],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [5.5, 10, 6.25, 11], "texture": "#0"},
+				"east": {"uv": [8.5, 2.5, 9.75, 3.5], "texture": "#0"},
+				"south": {"uv": [8, 10, 8.75, 11], "texture": "#0"},
+				"west": {"uv": [8.5, 3.5, 9.75, 4.5], "texture": "#0"},
+				"up": {"uv": [2.25, 10.75, 1.5, 9.5], "texture": "#0"},
+				"down": {"uv": [10.25, 6.5, 9.5, 7.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "weighted_stock",
+			"from": [7.51099, 2.42267, 21.36483],
+			"to": [8.46099, 3.17267, 23.91483],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [1.5, 12, 2, 12.5], "texture": "#0"},
+				"east": {"uv": [9.5, 10, 10.75, 10.5], "texture": "#0"},
+				"south": {"uv": [12, 1.5, 12.5, 2], "texture": "#0"},
+				"west": {"uv": [10.5, 1, 11.75, 1.5], "texture": "#0"},
+				"up": {"uv": [6.5, 10, 7, 11.25], "texture": "#0"},
+				"down": {"uv": [0.5, 10.5, 1, 11.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "weighted_stock",
+			"from": [7.73599, 3.42267, 16.41483],
+			"to": [8.23599, 4.42267, 18.41483],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [13, 8.5, 13.25, 9], "texture": "#0"},
+				"east": {"uv": [6, 1, 7, 1.5], "texture": "#0"},
+				"south": {"uv": [9, 13, 9.25, 13.5], "texture": "#0"},
+				"west": {"uv": [4.5, 11.5, 5.5, 12], "texture": "#0"},
+				"up": {"uv": [2, 12, 2.25, 13], "texture": "#0"},
+				"down": {"uv": [12, 2, 12.25, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "weighted_stock",
+			"from": [7.48599, 3.17267, 18.41483],
+			"to": [8.48599, 4.67267, 23.91483],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [11.5, 6.5, 12, 7.25], "texture": "#0"},
+				"east": {"uv": [3.5, 3.5, 6.25, 4.25], "texture": "#0"},
+				"south": {"uv": [7, 11.5, 7.5, 12.25], "texture": "#0"},
+				"west": {"uv": [3.5, 4.5, 6.25, 5.25], "texture": "#0"},
+				"up": {"uv": [7.5, 8.5, 8, 11.25], "texture": "#0"},
+				"down": {"uv": [3.5, 9, 4, 11.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "weighted_stock",
+			"from": [7.49849, 1.79767, 18.41483],
+			"to": [8.47349, 3.29767, 23.76483],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.98599, 2.54767, 21.66483]},
+			"faces": {
+				"north": {"uv": [11.5, 5.5, 12, 6.25], "texture": "#0"},
+				"east": {"uv": [3, 0, 5.75, 0.75], "texture": "#0"},
+				"south": {"uv": [6.5, 11.5, 7, 12.25], "texture": "#0"},
+				"west": {"uv": [3.5, 2.5, 6.25, 3.25], "texture": "#0"},
+				"up": {"uv": [3, 7, 3.5, 9.75], "texture": "#0"},
+				"down": {"uv": [7, 8.5, 7.5, 11.25], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "weighted_stock",
+			"origin": [8.475, -0.975, 8.75],
+			"scope": 0,
+			"color": 3,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

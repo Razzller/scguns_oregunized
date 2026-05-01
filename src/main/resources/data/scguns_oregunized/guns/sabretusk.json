@@ -1,0 +1,90 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.5,
+      "yOffset": 1.5,
+      "zOffset": -9.5,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "special",
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:mini_gun_3",
+    "baseGripType": "scguns:mini_gun_3",
+    "rate": 6,
+    "meleeDamage": 9.5,
+    "meleeCooldownTicks": 12,
+    "meleeReach": 4.5,
+    "hotBarrelRate": 100,
+    "speedModifier": 1.1,
+    "usesCustomMeleeAnimation": true,
+    "allowAmmoChange": true
+  },
+  "modules": {
+    "attachments": {
+    }
+  },
+  "projectile": {
+    "projectileAmount": 12,
+    "alwaysSpread": true,
+    "recoilAngle": 7.5,
+    "recoilKick": 4.0,
+    "spread": 7.0,
+    "criticalChance": 0.1,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.35,
+    "knockbackStrength": 0.65,
+    "advantage": "scguns:none",
+    "damage": 20.0,
+    "damageFalloffStart": 7.0,
+    "damageFalloffEnd": 18.0,
+    "damageFalloffMinMultiplier": 0.35,
+    "ejectsCasing": true,
+    "item": "scguns_oregunized:incendiary_round",
+    "casingType": "scguns_oregunized:medium_mauvite_casing",
+    "casingParticle": "scguns_oregunized:mauvite_casing",
+    "life": 40,
+    "size": 0.05,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "projectile_1": {
+    "projectileAmount": 6,
+    "alwaysSpread": true,
+    "recoilAngle": 5.0,
+    "recoilKick": 2.0,
+    "spread": 5.0,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 1.0,
+    "knockbackStrength": 0.5,
+    "advantage": "scguns:none",
+    "damageFalloffStart": 8.0,
+    "damageFalloffEnd": 20.0,
+    "damageFalloffMinMultiplier": 0.35,
+    "damage": 16.5,
+    "ejectsCasing": true,
+    "item": "scguns_oregunized:lead_slug",
+    "casingType": "scguns_oregunized:medium_potin_casing",
+    "casingParticle": "scguns_oregunized:potin_casing",
+    "life": 40,
+    "size": 0.05,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 30,
+    "maxAmmo": 1,
+    "reloadItem": "scguns_oregunized:lead_slug",
+    "reloadTimer": 40,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns_oregunized:item.mauvite_shotgun.fire",
+    "silencedFire": "scguns_oregunized:item.mauvite_shotgun.silenced_fire",
+    "fire": "scguns_oregunized:item.mauvite_shotgun.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

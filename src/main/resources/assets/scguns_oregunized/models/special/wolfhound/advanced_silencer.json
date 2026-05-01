@@ -1,0 +1,47 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "scguns_oregunized:item/wolfhound"
+	},
+	"elements": [
+		{
+			"name": "advanced_silencer",
+			"from": [7.34688, 3.975, 2.525],
+			"to": [8.84688, 5.475, 7.1],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.04687, 4.6, 4.0375]},
+			"faces": {
+				"north": {"uv": [0, 10, 0.75, 10.75], "texture": "#1"},
+				"east": {"uv": [6, 0, 8.25, 0.75], "texture": "#1"},
+				"south": {"uv": [1, 10, 1.75, 10.75], "texture": "#1"},
+				"west": {"uv": [6, 5.5, 8.25, 6.25], "texture": "#1"},
+				"up": {"uv": [6.75, 8.75, 6, 6.5], "texture": "#1"},
+				"down": {"uv": [7.75, 1, 7, 3.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "advanced_silencer",
+			"from": [7.52366, 4.325, 7.1],
+			"to": [8.67366, 5.475, 7.6],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.22366, 4.7, 4.5375]},
+			"faces": {
+				"north": {"uv": [10.5, 8, 11, 8.5], "texture": "#1"},
+				"east": {"uv": [12, 2, 12.25, 2.5], "texture": "#1"},
+				"south": {"uv": [8.5, 10.5, 9, 11], "texture": "#1"},
+				"west": {"uv": [2.5, 12, 2.75, 12.5], "texture": "#1"},
+				"up": {"uv": [12.5, 2.75, 12, 2.5], "texture": "#1"},
+				"down": {"uv": [3.5, 12, 3, 12.25], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "advanced_silencer",
+			"origin": [8.29002, -4.15, 11.6125],
+			"scope": 0,
+			"color": 9,
+			"children": [0, 1]
+		}
+	]
+}

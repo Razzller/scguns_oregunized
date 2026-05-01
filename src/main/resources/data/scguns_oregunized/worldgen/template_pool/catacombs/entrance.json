@@ -1,0 +1,19 @@
+{
+  "name": "scguns_oregunized:catacombs/entrance",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/main/catacomb_entrance",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

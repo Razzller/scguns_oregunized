@@ -1,0 +1,85 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.0,
+      "yOffset": 4.6,
+      "zOffset": -11.0,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "sniper",
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 13,
+    "meleeDamage": 2.5,
+    "meleeCooldownTicks": 20,
+    "meleeReach": 3.5,
+    "hotBarrelRate": 32
+  },
+  "modules": {
+    "attachments": {
+      "barrel": {
+        "yOffset": 4.6,
+        "zOffset": -12.5
+      },
+      "scope": {
+        "size": 0.7,
+        "yOffset": 5.6,
+        "zOffset": 3.0
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "underBarrel": {
+        "yOffset": 5.5,
+        "zOffset": -2.5
+      },"magazine": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.05,
+      "zOffset": 2.25
+    }
+  },
+  "projectile": {
+    "recoilAngle": 4.7,
+    "recoilKick": 2.22,
+    "spread": 1.0,
+    "criticalChance": 0.05,
+    "knockbackStrength": 0.5,
+    "damageFalloffStart": 45.0,
+    "damageFalloffEnd": 100.0,
+    "damageFalloffMinMultiplier": 0.85,
+    "advantage": "scguns:heavy",
+    "damage": 14.5,
+    "armorPen": 4.0,
+    "ejectsCasing": true,
+    "gravity": false  ,
+    "item": "scguns_oregunized:lead_slug",
+    "casingType": "scguns_oregunized:medium_mauvite_casing",
+    "casingParticle": "scguns_oregunized:mauvite_casing",
+    "life": 60,
+    "size": 0.1,
+    "speed": 10.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 20,
+    "maxAmmo": 7,
+    "reloadItem": "scguns_oregunized:lead_slug",
+    "reloadTimer": 40,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns_oregunized:item.apotheosis.fire",
+    "fire": "scguns_oregunized:item.apotheosis.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns_oregunized:item.apotheosis.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

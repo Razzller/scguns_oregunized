@@ -1,0 +1,38 @@
+{
+  "id": "scguns_oregunized:archon",
+  "equipment_chance": 1.0,
+  "items": [
+    {
+      "item": "scguns_oregunized:canter",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:hermes",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:jackrabbit",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "oreganized:electrum_axe",
+      "weight": 24.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    }
+  ]
+}

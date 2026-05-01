@@ -1,19 +1,31 @@
 package net.razetka.scguns_oregunized.common.item;
 
 import galena.oreganized.index.OEffects;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.Tags;
+import net.razetka.scguns_oregunized.init.ModTags;
+import net.razetka.scguns_oregunized.init.ModTiers;
 
-public class SledgehammerItem extends PickaxeItem {
+import javax.annotation.Nullable;
+import java.util.List;
 
-    public SledgehammerItem(Properties properties) {
-        super(Tiers.IRON, 7, -3.3f, properties);
+public class SledgehammerItem extends DiggerItem {
+    private final String tooltipKey;
+
+    public SledgehammerItem(Item.Properties pProperties, String tooltipKey) {
+        super(9, -3.3F, ModTiers.SLEDGEHAMMER, BlockTags.MINEABLE_WITH_PICKAXE, pProperties);
+        this.tooltipKey = tooltipKey;
     }
 
     @Override
@@ -31,13 +43,36 @@ public class SledgehammerItem extends PickaxeItem {
 
     public void performAttack(LivingEntity attacker, LivingEntity target) {
         target.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), 600, 0, true, true));
-        target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 600, 0, true, true));
 
         if (attacker instanceof Player player) {
-            ((Player) attacker).getCooldowns().addCooldown(this, 200);
+            player.getCooldowns().addCooldown(this, 200);
         }
-        attacker.level().playSound(null, target.getX(), target.getY(), target.getZ(),
-                SoundEvents.ANVIL_FALL, attacker.getSoundSource(),
-                1.2F, 0.8F + attacker.getRandom().nextFloat() * 0.4F);
+
+        ServerLevel level = (ServerLevel) attacker.level();
+        playExplosionSound(level, target);
+    }
+
+    private void playExplosionSound(Level world, LivingEntity target) {
+        float pitch = (0.8F + world.random.nextFloat() * 0.4F);
+
+        ((ServerLevel) world).playSound(null, target.getX(), target.getY(), target.getZ(),
+                SoundEvents.ANVIL_FALL, SoundSource.PLAYERS, 1.2F, 0.8f);
+        //TODO fix the sound!
+    }
+
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
+        if (tooltip != null && !tooltipKey.isEmpty()) {
+            tooltip.add(Component.translatable(tooltipKey)
+                    .withStyle(ChatFormatting.GRAY)
+                    .withStyle(ChatFormatting.ITALIC));
+        }
+        super.appendHoverText(stack, level, tooltip, flag);
+    }
+
+    @Override
+    public boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
+        return false;
     }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "scguns_oregunized:block/silver_lantern"
+    },
+    "hanging=true": {
+      "model": "scguns_oregunized:block/silver_lantern_hanging"
+    }
+  }
+}

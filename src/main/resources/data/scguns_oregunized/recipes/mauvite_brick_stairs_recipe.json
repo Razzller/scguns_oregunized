@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "scguns_oregunized:mauvite_bricks"
+    }
+  },
+    "pattern": [
+      "P  ",
+      "PP ",
+      "PPP"
+  ],
+  "result": {
+    "item": "scguns_oregunized:mauvite_brick_stairs",
+    "count": 4
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "oreganized:lead_bolt"
+    "oreganized:lead_bolt",
+    "scguns_oregunized:incendiary_round"
   ]
 }

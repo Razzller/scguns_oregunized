@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "scguns_oregunized:mauvite_bricks"
+  },
+  "result": "scguns_oregunized:mauvite_brick_slab",
+  "count": 2
+}

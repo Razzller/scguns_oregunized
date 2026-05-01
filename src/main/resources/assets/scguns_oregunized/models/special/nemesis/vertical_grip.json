@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/nemesis"
+	},
+	"elements": [
+		{
+			"name": "vertical_grip",
+			"from": [7.33447, 1.205, 7.58625],
+			"to": [8.68447, 2.255, 9.11625],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 12]},
+			"faces": {
+				"north": {"uv": [4.25, 1.75, 4.625, 2], "texture": "#0"},
+				"east": {"uv": [4.75, 2.75, 5.125, 3], "texture": "#0"},
+				"south": {"uv": [4.75, 7, 5.125, 7.25], "texture": "#0"},
+				"west": {"uv": [7, 5.5, 7.375, 5.75], "texture": "#0"},
+				"up": {"uv": [1.625, 6.875, 1.25, 6.5], "texture": "#0"},
+				"down": {"uv": [6.875, 1.25, 6.5, 1.625], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.55947, -0.7275, 7.92375],
+			"to": [8.45947, 1.2725, 8.82375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.00947, -0.34, 8.37375]},
+			"faces": {
+				"north": {"uv": [1.25, 7, 1.5, 7.5], "texture": "#0"},
+				"east": {"uv": [7, 1.25, 7.25, 1.75], "texture": "#0"},
+				"south": {"uv": [1.5, 7, 1.75, 7.5], "texture": "#0"},
+				"west": {"uv": [2.25, 7, 2.5, 7.5], "texture": "#0"},
+				"up": {"uv": [6, 5.75, 5.75, 5.5], "texture": "#0"},
+				"down": {"uv": [6, 6.25, 5.75, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.46947, -1.1775, 7.83375],
+			"to": [8.54947, -0.7275, 8.91375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.00947, -0.34, 8.37375]},
+			"faces": {
+				"north": {"uv": [7.75, 6.75, 8, 6.875], "texture": "#0"},
+				"east": {"uv": [7, 7.75, 7.25, 7.875], "texture": "#0"},
+				"south": {"uv": [7.75, 7, 8, 7.125], "texture": "#0"},
+				"west": {"uv": [7.25, 7.75, 7.5, 7.875], "texture": "#0"},
+				"up": {"uv": [0.75, 6.75, 0.5, 6.5], "texture": "#0"},
+				"down": {"uv": [6.75, 0.75, 6.5, 1], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical_grip",
+			"origin": [8, 0.15, 7],
+			"scope": 0,
+			"color": 5,
+			"children": [0, 1, 2]
+		}
+	]
+}

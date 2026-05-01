@@ -1,0 +1,78 @@
+{
+  "raid_id": "white_wolf",
+  "raid_level": 4,
+  "boss": {
+    "entity_type": "scguns_oregunized:centurion",
+    "custom_name": "Commander Paxton",
+    "fixed_health": 125.0,
+    "weapon": {
+      "item": "scguns_oregunized:apotheosis",
+      "drop_chance": 0.35
+    },
+    "armor": [],
+    "effects": [
+      {
+        "effect": "minecraft:glowing",
+        "amplifier": 0,
+        "duration": -1,
+        "ambient": true,
+        "visible": false
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "amplifier": 0,
+        "duration": -1,
+        "ambient": false,
+        "visible": false
+      }
+    ],
+    "ai_difficulty": 6,
+    "ai_type": "TACTICAL",
+    "special_loot_table": "scguns_oregunized:raids/white_wolf_boss"
+  },
+
+  "henchmen": {
+    "types": [
+      {
+        "entity_type": "scguns_oregunized:tirone",
+        "weight": 6.0,
+        "health_multiplier": 1.5,
+        "weapons": [
+          "scguns_oregunized:wolfhound",
+          "scguns_oregunized:warthog",
+          "scguns_oregunized:tirone_smg",
+          "scguns_oregunized:prospector",
+          "scguns_oregunized:chimera",
+          "scguns_oregunized:duster",
+          "scguns_oregunized:mauvite_bludgeon",
+          "scguns_oregunized:mauvite_bludgeon",
+          "scguns_oregunized:mauvite_bludgeon"
+        ],
+        "armor": [],
+        "effects": [
+          {
+            "effect": "minecraft:speed",
+            "amplifier": 0,
+            "duration": -1,
+            "ambient": true,
+            "visible": false
+          }
+        ],
+        "ai_difficulty": 4,
+        "ai_type": "TACTICAL"
+      }
+    ],
+    "spawn_interval_ticks": 500,
+    "max_alive": 6,
+    "spawn_radius": 20,
+    "spawn_attempts_per_wave": 4
+  },
+  "spawn_conditions": {
+    "min_players_nearby": 1,
+    "search_radius": 64,
+    "valid_dimensions": [
+      "minecraft:overworld"
+    ],
+    "announcement_message": "translation:raid.announcement.scguns_oregunized.white_wolf"
+  }
+}
