@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/duster"
+	},
+	"elements": [
+		{
+			"name": "vertical_grip",
+			"from": [7.33447, 1.155, 6.58625],
+			"to": [8.68447, 2.205, 8.11625],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 10]},
+			"faces": {
+				"north": {"uv": [11, 0.5, 11.75, 1], "texture": "#0"},
+				"east": {"uv": [11, 1, 11.75, 1.5], "texture": "#0"},
+				"south": {"uv": [11, 1.5, 11.75, 2], "texture": "#0"},
+				"west": {"uv": [11, 3, 11.75, 3.5], "texture": "#0"},
+				"up": {"uv": [10.75, 8.25, 10, 7.5], "texture": "#0"},
+				"down": {"uv": [10.75, 8.5, 10, 9.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.55947, -0.7775, 6.92375],
+			"to": [8.45947, 1.2225, 7.82375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.00947, -0.39, 7.37375]},
+			"faces": {
+				"north": {"uv": [10.5, 4, 11, 5], "texture": "#0"},
+				"east": {"uv": [5, 10.5, 5.5, 11.5], "texture": "#0"},
+				"south": {"uv": [5.5, 10.5, 6, 11.5], "texture": "#0"},
+				"west": {"uv": [8, 10.5, 8.5, 11.5], "texture": "#0"},
+				"up": {"uv": [11, 11.5, 10.5, 11], "texture": "#0"},
+				"down": {"uv": [11.5, 10.5, 11, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.46947, -1.2275, 6.83375],
+			"to": [8.54947, -0.7775, 7.91375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.00947, -0.39, 7.37375]},
+			"faces": {
+				"north": {"uv": [11, 12, 11.5, 12.25], "texture": "#0"},
+				"east": {"uv": [12, 11, 12.5, 11.25], "texture": "#0"},
+				"south": {"uv": [12, 11.5, 12.5, 11.75], "texture": "#0"},
+				"west": {"uv": [12, 12, 12.5, 12.25], "texture": "#0"},
+				"up": {"uv": [11.5, 11.5, 11, 11], "texture": "#0"},
+				"down": {"uv": [0.5, 11.5, 0, 12], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical_grip",
+			"origin": [8.225, 0.25, 8],
+			"scope": 0,
+			"color": 8,
+			"children": [0, 1, 2]
+		}
+	]
+}

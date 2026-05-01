@@ -1,0 +1,46 @@
+{
+  "id": "scguns_oregunized:arphilem",
+  "equipment_chance": 1.0,
+  "items": [
+    {
+      "item": "scguns_oregunized:whirlwind",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:mactricia",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:avantrima",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:volter_sp",
+      "weight": 16.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "oreganized:electrum_sword",
+      "weight": 24.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    }
+  ]
+}

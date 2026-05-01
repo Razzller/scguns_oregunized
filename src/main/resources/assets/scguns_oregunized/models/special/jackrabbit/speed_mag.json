@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/jackrabbit"
+	},
+	"elements": [
+		{
+			"name": "speed_mag",
+			"from": [7.49791, -0.1114, 10.7],
+			"to": [8.49791, 2.9886, 14.375],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 11]},
+			"faces": {
+				"north": {"uv": [7.5, 3.25, 7.75, 4], "texture": "#0"},
+				"east": {"uv": [3.5, 3.5, 4.375, 4.25], "texture": "#0"},
+				"south": {"uv": [7.75, 0.75, 8, 1.5], "texture": "#0"},
+				"west": {"uv": [1, 4, 1.875, 4.75], "texture": "#0"},
+				"up": {"uv": [3.25, 7.25, 3.5, 8.125], "texture": "#0"},
+				"down": {"uv": [6, 7.25, 6.25, 8.125], "texture": "#0"}
+			}
+		},
+		{
+			"name": "speed_mag",
+			"from": [7.37291, -0.6114, 10.575],
+			"to": [8.62291, -0.1114, 14.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 11]},
+			"faces": {
+				"north": {"uv": [8.75, 0, 9.125, 0.125], "texture": "#0"},
+				"east": {"uv": [8, 1.25, 9, 1.375], "texture": "#0"},
+				"south": {"uv": [8.75, 0.25, 9.125, 0.375], "texture": "#0"},
+				"west": {"uv": [8, 1.75, 9, 1.875], "texture": "#0"},
+				"up": {"uv": [5.5, 5.75, 5.875, 6.75], "texture": "#0"},
+				"down": {"uv": [0, 6, 0.375, 7], "texture": "#0"}
+			}
+		},
+		{
+			"name": "speed_mag",
+			"from": [7.99791, -1.5114, 10.7],
+			"to": [7.99791, -0.5114, 14.375],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 11]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.25], "texture": "#0"},
+				"east": {"uv": [4.5, 4, 5.375, 4.25], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0.25], "texture": "#0"},
+				"west": {"uv": [7.25, 1.5, 8.125, 1.75], "texture": "#0"},
+				"up": {"uv": [0, 0.875, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0.875], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "speed_mag",
+			"origin": [8.225, -7.66376, 10.8287],
+			"scope": 0,
+			"color": 4,
+			"children": [0, 1, 2]
+		}
+	]
+}

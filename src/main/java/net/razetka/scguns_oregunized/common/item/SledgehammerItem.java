@@ -13,7 +13,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.razetka.scguns_oregunized.common.ModTags;
+import net.minecraftforge.common.Tags;
+import net.razetka.scguns_oregunized.init.ModTags;
 import net.razetka.scguns_oregunized.init.ModTiers;
 
 import javax.annotation.Nullable;
@@ -23,7 +24,7 @@ public class SledgehammerItem extends DiggerItem {
     private final String tooltipKey;
 
     public SledgehammerItem(Item.Properties pProperties, String tooltipKey) {
-        super(9, -3.3F, ModTiers.SLEDGEHAMMER, ModTags.MINEABLE_SLEDGEHAMMER, pProperties);
+        super(9, -3.3F, ModTiers.SLEDGEHAMMER, BlockTags.MINEABLE_WITH_PICKAXE, pProperties);
         this.tooltipKey = tooltipKey;
     }
 
@@ -42,23 +43,20 @@ public class SledgehammerItem extends DiggerItem {
 
     public void performAttack(LivingEntity attacker, LivingEntity target) {
         target.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), 600, 0, true, true));
-        //target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 600, 0, true, true));
 
         if (attacker instanceof Player player) {
-            ((Player) attacker).getCooldowns().addCooldown(this, 200);
+            player.getCooldowns().addCooldown(this, 200);
         }
 
         ServerLevel level = (ServerLevel) attacker.level();
-        if (!level.isClientSide) {
-            playExplosionSound(level, target);
-        }
+        playExplosionSound(level, target);
     }
 
     private void playExplosionSound(Level world, LivingEntity target) {
         float pitch = (0.8F + world.random.nextFloat() * 0.4F);
 
-        world.playSound(null, target.getX(), target.getY(), target.getZ(),
-                SoundEvents.ANVIL_FALL, SoundSource.PLAYERS, 1.2F, pitch);
+        ((ServerLevel) world).playSound(null, target.getX(), target.getY(), target.getZ(),
+                SoundEvents.ANVIL_FALL, SoundSource.PLAYERS, 1.2F, 0.8f);
         //TODO fix the sound!
     }
 

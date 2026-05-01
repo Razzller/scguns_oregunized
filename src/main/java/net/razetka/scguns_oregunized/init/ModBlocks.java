@@ -6,11 +6,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.razetka.scguns_oregunized.ScGunsOregunized;
+import net.razetka.scguns_oregunized.common.block.AnchorBlock;
 import net.razetka.scguns_oregunized.common.block.LuxuriousVaseBlock;
 import net.razetka.scguns_oregunized.common.block.MauvitePressurePlateBlock;
 
@@ -22,6 +25,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MAUVITE_BLOCK = registerBlock("mauvite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> MAUVITE_ANCHOR = registerBlock("anchor",
+            () -> new AnchorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).noLootTable()));
 
     public static final RegistryObject<Block> MAUVITE_BRICKS = registerBlock("mauvite_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)));
@@ -36,41 +42,12 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(MAUVITE_BRICKS.get())));
 
     public static final RegistryObject<Block> MAUVITE_BUTTON = registerBlock("mauvite_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .sound(SoundType.METAL).noOcclusion().noCollission(), BlockSetType.IRON, 60, false));
+            () -> new ButtonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).strength(0.5F, 0.0F).sound(SoundType.METAL)
+                    .sound(SoundType.METAL).noOcclusion().noCollission().strength(0.5f, 0f), BlockSetType.IRON, 60, false));
 
     public static final RegistryObject<Block> MAUVITE_PRESSURE_PLATE = registerBlock("mauvite_pressure_plate",
-            () -> new MauvitePressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).noOcclusion().noCollission(), BlockSetType.IRON));
-
-
-
-    public static final RegistryObject<Block> SILVER_LAMP = registerBlock("silver_lamp",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LANTERN)
-                    .sound(SoundType.GLASS)
-                    .noOcclusion()));
-
-    public static final RegistryObject<Block> SILVER_LANTERN = registerBlock("silver_lantern",
-            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.GLASS)));
-
-
-    public static final RegistryObject<Block> SILVER_MOSAIC = registerBlock("silver_mosaic",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> SILVER_MOSAIC_STAIRS = registerBlock("silver_mosaic_stairs",
-            () -> new StairBlock(() -> ModBlocks.MAUVITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(SILVER_MOSAIC.get())));
-    public static final RegistryObject<Block> SILVER_MOSAIC_SLAB = registerBlock("silver_mosaic_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(SILVER_MOSAIC.get())));
-
-    public static final RegistryObject<Block> SILVER_PILLAR = registerBlock("silver_pillar",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-
-    public static final RegistryObject<Block> CHISELED_SILVER = registerBlock("chiseled_silver",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-
-    public static final RegistryObject<Block> SILVER_BARS = registerBlock("silver_bars",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-
-    public static final RegistryObject<Block> LUXURIOUS_VASE = registerBlock("luxurious_vase",
-            () -> new LuxuriousVaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
+            () -> new MauvitePressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).strength(0.5F, 0.0F).sound(SoundType.METAL)
+                    .sound(SoundType.METAL).noOcclusion().noCollission().strength(0.5f, 0f), BlockSetType.IRON));
 
 
 

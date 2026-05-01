@@ -6,7 +6,7 @@
   },
   "ingredients": {
     "blueprint": {
-      "item": "scguns:iron_blueprint"
+      "item": "scguns_oregunized:union_blueprint"
     },
     "gun_internal_1": {
       "item": "scguns:firing_unit"

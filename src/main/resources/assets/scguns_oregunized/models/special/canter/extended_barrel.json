@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/canter"
+	},
+	"elements": [
+		{
+			"name": "extended_barrel",
+			"from": [7.43787, 2.79767, 5.80233],
+			"to": [8.43787, 3.79767, 16.30233],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.78787, 3.14767, 0.55233]},
+			"faces": {
+				"north": {"uv": [7.75, 6.25, 8, 6.5], "texture": "#0"},
+				"east": {"uv": [2.5, 1.5, 5.125, 1.75], "texture": "#0"},
+				"south": {"uv": [6.5, 7.75, 6.75, 8], "texture": "#0"},
+				"west": {"uv": [2.5, 1.75, 5.125, 2], "texture": "#0"},
+				"up": {"uv": [1.25, 5.375, 1, 2.75], "texture": "#0"},
+				"down": {"uv": [1.5, 2.75, 1.25, 5.375], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.2875, 2.64767, 5.80233],
+			"to": [8.7125, 3.14767, 16.80233],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 11]},
+			"faces": {
+				"north": {"uv": [7.25, 8.25, 7.625, 8.375], "texture": "#0"},
+				"east": {"uv": [5.25, 1.5, 8, 1.625], "texture": "#0"},
+				"south": {"uv": [8.25, 7, 8.625, 7.125], "texture": "#0"},
+				"west": {"uv": [5.25, 1.75, 8, 1.875], "texture": "#0"},
+				"up": {"uv": [0.375, 2.75, 0, 0], "texture": "#0"},
+				"down": {"uv": [0.875, 0, 0.5, 2.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "extended_barrel",
+			"from": [7.31893, 2.57892, 5.3023],
+			"to": [8.61893, 3.87892, 5.8023],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.89393, 3.15392, 12.55858]},
+			"faces": {
+				"north": {"uv": [7.625, 5.875, 8, 6.25], "texture": "#0"},
+				"east": {"uv": [8.375, 0.625, 8.5, 1], "texture": "#0"},
+				"south": {"uv": [6.125, 8.625, 6.5, 9], "texture": "#0"},
+				"west": {"uv": [1.125, 8.5, 1.25, 8.875], "texture": "#0"},
+				"up": {"uv": [8.75, 1.125, 8.375, 1], "texture": "#0"},
+				"down": {"uv": [1.5, 8.375, 1.125, 8.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "extended_barrel",
+			"origin": [8.01287, -2.65233, 2.55233],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -2,42 +2,14 @@
   "raid_id": "stellar_order",
   "raid_level": 4,
   "boss": {
-    "entity_type": "minecraft:wither_skeleton",
-    "custom_name": "Arphilem Materzo",
+    "entity_type": "scguns_oregunized:archon",
+    "custom_name": "Archon Gabriel",
     "fixed_health": 125.0,
     "weapon": {
-      "item": "scguns_oregunized:avantrima",
+      "item": "scguns_oregunized:canter",
       "drop_chance": 0.35
     },
-    "armor": [
-      {
-        "item": "scguns:brass_mask",
-        "slot": "head",
-        "drop_chance": 0.5
-      },
-      {
-        "item": "oreganized:electrum_chestplate",
-        "slot": "chest",
-        "nbt": {
-          "Trim": {
-            "material": "oreganized:silver",
-            "pattern": "minecraft:eye"
-          },
-          "EmissiveTrim": 1
-        },
-        "drop_chance": 0.0
-      },
-      {
-        "item": "oreganized:electrum_leggings",
-        "slot": "legs",
-        "drop_chance": 0.25
-      },
-      {
-        "item": "oreganized:electrum_boots",
-        "slot": "feet",
-        "drop_chance": 0.25
-      }
-    ],
+    "armor": [],
     "effects": [
       {
         "effect": "minecraft:glowing",
@@ -48,78 +20,41 @@
       },
       {
         "effect": "minecraft:regeneration",
-        "amplifier": 1,
+        "amplifier": 0,
         "duration": -1,
         "ambient": false,
         "visible": false
       },
       {
         "effect": "minecraft:speed",
-        "amplifier": 1,
+        "amplifier": 0,
         "duration": -1,
         "ambient": true,
         "visible": false
       }
     ],
-    "ai_difficulty": 9,
-    "ai_type": "SMART",
+    "ai_difficulty": 7,
+    "ai_type": "TACTICAL",
     "special_loot_table": "scguns_oregunized:raids/stellar_order_boss"
   },
 
   "henchmen": {
     "types": [
       {
-        "entity_type": "minecraft:zombie",
+        "entity_type": "scguns_oregunized:arphilem",
         "weight": 6.0,
         "health_multiplier": 1.5,
         "weapons": [
+          "scguns_oregunized:avantrima",
+          "scguns_oregunized:whirlwind",
+          "scguns_oregunized:volter_sp",
           "scguns_oregunized:mactricia",
-          "scguns_oregunized:whirlwind"
+          "scguns_oregunized:hermes",
+          "oreganized:electrum_sword",
+          "oreganized:electrum_sword"
         ],
-        "armor": [
-          {
-            "item": "scguns:brass_mask",
-            "slot": "head",
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:golden_chestplate",
-            "slot": "chest",
-            "nbt": {
-              "Trim": {
-                "material": "minecraft:copper",
-                "pattern": "minecraft:snout"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:iron_leggings",
-            "slot": "legs",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:electrum",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "oreganized:electrum_boots",
-            "slot": "feet",
-            "chance": 1.0
-          }
-        ],
+        "armor": [],
         "effects": [
-          {
-            "effect": "minecraft:speed",
-            "amplifier": 0,
-            "duration": -1,
-            "ambient": false,
-            "visible": false
-          },
           {
             "effect": "minecraft:resistance",
             "amplifier": 0,
@@ -130,142 +65,12 @@
         ],
         "ai_difficulty": 4,
         "ai_type": "TACTICAL"
-      },
-      {
-        "entity_type": "minecraft:husk",
-        "weight": 2.5,
-        "health_multiplier": 2.0,
-        "weapons": [
-          "scguns_oregunized:amperbreaker",
-          "scguns_oregunized:hermes",
-          "oreganized:electrum_axe"
-        ],
-        "armor": [
-          {
-            "item": "scguns:brass_mask",
-            "slot": "head",
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:iron_chestplate",
-            "slot": "chest",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:lead",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:iron_leggings",
-            "slot": "legs",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:silver",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:iron_boots",
-            "slot": "feet",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:silver",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          }
-        ],
-        "effects": [
-          {
-            "effect": "minecraft:resistance",
-            "amplifier": 0,
-            "duration": -1,
-            "ambient": true,
-            "visible": false
-          },
-          {
-            "effect": "minecraft:speed",
-            "amplifier": 0,
-            "duration": -1,
-            "ambient": true,
-            "visible": false
-          }
-        ],
-        "ai_difficulty": 4,
-        "ai_type": "RECKLESS"
-      },
-      {
-        "entity_type": "minecraft:skeleton",
-        "weight": 4.0,
-        "health_multiplier": 1.5,
-        "weapons": [
-          "scguns_oregunized:volter_sp",
-          "scguns_oregunized:haretrot",
-          "oreganized:electrum_sword",
-          "oreganized:electrum_sword",
-          "oreganized:electrum_sword"
-        ],
-        "armor": [
-          {
-            "item": "scguns:brass_mask",
-            "slot": "head",
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:golden_chestplate",
-            "slot": "chest",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:electrum",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "minecraft:golden_leggings",
-            "slot": "legs",
-            "nbt": {
-              "Trim": {
-                "material": "oreganized:electrum",
-                "pattern": "minecraft:silence"
-              },
-              "EmissiveTrim": 1
-            },
-            "chance": 1.0
-          },
-          {
-            "item": "oreganized:electrum_boots",
-            "slot": "feet",
-            "chance": 1.0
-          }
-        ],
-        "effects": [
-          {
-            "effect": "minecraft:speed",
-            "amplifier": 1,
-            "duration": -1,
-            "ambient": false,
-            "visible": false
-          }
-        ],
-        "ai_difficulty": 4,
-        "ai_type": "COWARD"
       }
     ],
     "spawn_interval_ticks": 300,
-    "max_alive": 8,
+    "max_alive": 6,
     "spawn_radius": 20,
-    "spawn_attempts_per_wave": 6
+    "spawn_attempts_per_wave": 4
   },
   "spawn_conditions": {
     "min_players_nearby": 1,

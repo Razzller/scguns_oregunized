@@ -1,0 +1,48 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/tirone_smg",
+		"particle": "scguns_oregunized:item/tirone_smg"
+	},
+	"elements": [
+		{
+			"name": "vertical_grip",
+			"from": [7.55, 0.455, 9.61554],
+			"to": [8.55, 2.455, 10.61554],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 0.8425, 10.06554]},
+			"faces": {
+				"north": {"uv": [8.5, 5, 9, 6], "texture": "#0"},
+				"east": {"uv": [4, 11, 4.5, 12], "texture": "#0"},
+				"south": {"uv": [11.5, 2.5, 12, 3.5], "texture": "#0"},
+				"west": {"uv": [4.5, 11.5, 5, 12.5], "texture": "#0"},
+				"up": {"uv": [3, 8.5, 2.5, 8], "texture": "#0"},
+				"down": {"uv": [5, 8.5, 4.5, 9], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.46, -0.045, 9.47604],
+			"to": [8.71, 0.455, 10.72604],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 0.7925, 10.01604]},
+			"faces": {
+				"north": {"uv": [12.5, 3, 13.25, 3.25], "texture": "#0"},
+				"east": {"uv": [4.5, 12.5, 5.25, 12.75], "texture": "#0"},
+				"south": {"uv": [12.5, 4.5, 13.25, 4.75], "texture": "#0"},
+				"west": {"uv": [12.5, 5, 13.25, 5.25], "texture": "#0"},
+				"up": {"uv": [10.75, 2.25, 10, 1.5], "texture": "#0"},
+				"down": {"uv": [3.25, 10, 2.5, 10.75], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical_grip",
+			"origin": [8, 0, 9],
+			"scope": 0,
+			"color": 6,
+			"children": [0, 1]
+		}
+	]
+}

@@ -42,6 +42,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MAUVITE_LEGGINGS);
         simpleItem(ModItems.MAUVITE_BOOTS);
         simpleItem(ModItems.SUPER_POISONOUS_POTATO);
+        simpleItem(ModItems.ARPHILEM_SPAWN_EGG);
+        simpleItem(ModItems.ARCHON_SPAWN_EGG);
+        simpleItem(ModItems.TIRONE_SPAWN_EGG);
+        simpleItem(ModItems.CENTURION_SPAWN_EGG);
+        simpleItem(ModItems.UNION_BLUEPRINT);
+        simpleItem(ModItems.UNION_FLARE);
+        simpleItem(ModItems.MEDAL_OF_HONOR);
+
 
 
 

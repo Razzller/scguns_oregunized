@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "scguns_oregunized:item/jackrabbit"
+	},
+	"elements": [
+		{
+			"name": "vertical_grip",
+			"from": [7.31098, 2.755, 7.63625],
+			"to": [8.66098, 3.805, 9.16625],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 11]},
+			"faces": {
+				"north": {"uv": [8.25, 3.5, 8.625, 3.75], "texture": "#0"},
+				"east": {"uv": [8.25, 5, 8.625, 5.25], "texture": "#0"},
+				"south": {"uv": [5.5, 8.25, 5.875, 8.5], "texture": "#0"},
+				"west": {"uv": [8.25, 5.5, 8.625, 5.75], "texture": "#0"},
+				"up": {"uv": [8.125, 7.625, 7.75, 7.25], "texture": "#0"},
+				"down": {"uv": [8.125, 7.75, 7.75, 8.125], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.53598, 0.8225, 7.97375],
+			"to": [8.43598, 2.8225, 8.87375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [7.98598, 1.21, 8.42375]},
+			"faces": {
+				"north": {"uv": [4.75, 8, 5, 8.5], "texture": "#0"},
+				"east": {"uv": [1.5, 8.25, 1.75, 8.75], "texture": "#0"},
+				"south": {"uv": [1.75, 8.25, 2, 8.75], "texture": "#0"},
+				"west": {"uv": [2, 8.25, 2.25, 8.75], "texture": "#0"},
+				"up": {"uv": [4, 8.75, 3.75, 8.5], "texture": "#0"},
+				"down": {"uv": [8.75, 4, 8.5, 4.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "vertical_grip",
+			"from": [7.44598, 0.3725, 7.88375],
+			"to": [8.52598, 0.8225, 8.96375],
+			"rotation": {"angle": -45, "axis": "y", "origin": [7.98598, 1.21, 8.42375]},
+			"faces": {
+				"north": {"uv": [8.75, 8.75, 9, 8.875], "texture": "#0"},
+				"east": {"uv": [0, 9, 0.25, 9.125], "texture": "#0"},
+				"south": {"uv": [0.25, 9, 0.5, 9.125], "texture": "#0"},
+				"west": {"uv": [9, 0.5, 9.25, 0.625], "texture": "#0"},
+				"up": {"uv": [8.75, 4.5, 8.5, 4.25], "texture": "#0"},
+				"down": {"uv": [5, 8.5, 4.75, 8.75], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical_grip",
+			"origin": [8.475, -0.1, 6.75],
+			"scope": 0,
+			"color": 9,
+			"children": [0, 1, 2]
+		}
+	]
+}

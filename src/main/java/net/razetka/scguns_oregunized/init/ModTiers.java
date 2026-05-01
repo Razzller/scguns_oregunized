@@ -12,7 +12,7 @@ public class ModTiers {
 
         @Override
         public float getSpeed() {
-            return 64.0F;
+            return 10.0F;
         }
 
         @Override
@@ -23,6 +23,38 @@ public class ModTiers {
         @Override
         public int getLevel() {
             return -1;
+        }
+
+        @Override
+        public int getEnchantmentValue() {
+            return 5;
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(ModItems.MAUVITE_INGOT.get());
+        }
+    };
+
+    public static final Tier BLUDGEON = new Tier() {
+        @Override
+        public int getUses() {
+            return 720;
+        }
+
+        @Override
+        public float getSpeed() {
+            return 0;
+        }
+
+        @Override
+        public float getAttackDamageBonus() {
+            return 6;
+        }
+
+        @Override
+        public int getLevel() {
+            return 0;
         }
 
         @Override

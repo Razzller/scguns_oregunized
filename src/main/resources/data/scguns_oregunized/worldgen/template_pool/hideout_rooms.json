@@ -1,0 +1,197 @@
+{
+  "name": "scguns_oregunized:hideout_rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 8,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/amethyst",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/bottom_office",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/cooler",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/dinosaur",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/double_stairs",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 13,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/hallway",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 12,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/junction",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/library",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/mid_obstacle",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/office",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/platform",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/reactor",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/top",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 12,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/turn",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "scguns_oregunized:radio_tower/hideout/rooms/two_floor",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

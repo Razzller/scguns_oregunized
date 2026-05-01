@@ -53,6 +53,7 @@
     "criticalChance": 0.05,
     "advantage": "scguns:none",
     "damage": 12.0,
+    "armorPen": 2.0,
     "ejectsCasing": false,
     "gravity": false,
     "item": "scguns:energy_core",

@@ -46,8 +46,6 @@
     "gravity": true,
     "item": "oreganized:lead_bolt",
     "ejectsCasing": false,
-    "casingType": "scguns:small_brass_casing",
-    "casingParticle": "scguns:brass_casing",
     "life": 45,
     "size": 0.05,
     "speed": 12.0,

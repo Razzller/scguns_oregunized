@@ -45,9 +45,9 @@
     "spread": 1.7,
     "alwaysSpread": true,
     "criticalChance": 0.05,
-    "critDamageMultiplier": 2.5,
+    "critDamageMultiplier": 3.0,
     "advantage": "scguns:none",
-    "damage": 8.0,
+    "damage": 6.5,
     "damageFalloffStart": 16.0,
     "damageFalloffEnd": 38.0,
     "damageFalloffMinMultiplier": 0.65,
@@ -65,7 +65,7 @@
     "emptyMagTimer": 30,
     "maxAmmo": 36,
     "reloadItem": "scguns:compact_advanced_round",
-    "reloadTimer": 100,
+    "reloadTimer": 35,
     "reloadType": "scguns:mag_fed"
   },
   "sounds": {

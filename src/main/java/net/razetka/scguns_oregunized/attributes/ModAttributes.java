@@ -15,7 +15,7 @@ public class ModAttributes {
     public static final RegistryObject<Attribute> FALL_DAMAGE_REDUCTION = ATTRIBUTES.register("fall_damage_reduction",
             () -> new RangedAttribute("attribute.%s.%s".formatted(MOD_ID, "fall_damage_reduction"), 0,0,1.0f));
     public static final RegistryObject<Attribute> BULLET_DAMAGE_REDUCTION = ATTRIBUTES.register("bullet_damage_reduction",
-            () -> new RangedAttribute("attribute.%s.%s".formatted(MOD_ID, "bullet_damage_reduction"), 0,0,1.0f));
+            () -> new RangedAttribute("attribute.%s.%s".formatted(MOD_ID, "bullet_damage_reduction"), 0.0f,0.0f,1.0f));
 
     public static void register(IEventBus eventBus) {ATTRIBUTES.register(eventBus);}
 }

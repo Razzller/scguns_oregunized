@@ -10,8 +10,7 @@ import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.razetka.scguns_oregunized.common.ModTags;
-import net.razetka.scguns_oregunized.init.ModEffects;
+import net.razetka.scguns_oregunized.init.ModTags;
 
 import static net.razetka.scguns_oregunized.init.ModEffects.OVERLOAD;
 

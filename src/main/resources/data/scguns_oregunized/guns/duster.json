@@ -16,11 +16,6 @@
   },
   "modules": {
     "attachments": {
-      "scope": {
-        "size": 0.8,
-        "yOffset": 6.0,
-        "zOffset": 5.2
-      },
       "underBarrel": {
         "scale": 0.0
       }
@@ -52,7 +47,7 @@
     "trailThickness": 0.5
   },
   "reloads": {
-    "emptyMagTimer": 30,
+    "emptyMagTimer": 25,
     "maxAmmo": 30,
     "reloadItem": "oreganized:lead_nugget",
     "reloadTimer": 15,

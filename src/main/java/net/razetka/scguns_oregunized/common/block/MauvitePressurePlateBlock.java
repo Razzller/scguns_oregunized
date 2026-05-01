@@ -14,6 +14,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.phys.BlockHitResult;
 
+import static net.minecraft.world.level.block.TntBlock.explode;
+
 
 public class MauvitePressurePlateBlock extends PressurePlateBlock {
     private BlockSetType type;

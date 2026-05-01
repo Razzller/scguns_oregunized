@@ -2,24 +2,30 @@ package net.razetka.scguns_oregunized.common.item;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import galena.oreganized.index.OEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraftforge.common.ToolAction;
 import net.razetka.scguns_oregunized.init.ModItems;
+import net.razetka.scguns_oregunized.init.ModTiers;
 
 import java.util.UUID;
 
-public class MauviteBludgeonItem extends Item {
+public class MauviteBludgeonItem extends SwordItem {
     private final float attackDamage;
     private final Multimap<Attribute, AttributeModifier> defaultModifiers;
     private final UUID uuid = UUID.fromString("F5370F66-DB1F-42DD-9E53-40849D257D9B");
 
     public MauviteBludgeonItem(int pAttackDamageModifier, float pAttackSpeedModifier, float extraKnockback, Item.Properties pProperties) {
-        super(pProperties);
+        super(ModTiers.BLUDGEON, 6, extraKnockback, pProperties);
         this.attackDamage = (float)pAttackDamageModifier;
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Weapon modifier", (double)this.attackDamage, AttributeModifier.Operation.ADDITION));
@@ -37,17 +43,25 @@ public class MauviteBludgeonItem extends Item {
     return attackDamage;
 }
 
-
-
-public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pStack.hurtAndBreak(1, pAttacker, (entity) -> {
-            entity.broadcastBreakEvent(EquipmentSlot.MAINHAND);
-        });
+    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+        if (!pAttacker.level().isClientSide) {
+            if (!(pAttacker instanceof Player)) {
+                if (Math.random() < 0.35)
+                    pTarget.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), 100, 0, true, true));
+            }
+            pStack.hurtAndBreak(1, pAttacker, (entity) -> {
+                entity.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+            });
+        }
         return true;
     }
 
-
     public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
         return pToRepair.is(ModItems.MAUVITE_INGOT.get()) || super.isValidRepairItem(pToRepair, pRepair);
+    }
+
+    @Override
+    public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
+        return false; //Remove sweep attack, I hope it won't cause any compatibility issues
     }
 }

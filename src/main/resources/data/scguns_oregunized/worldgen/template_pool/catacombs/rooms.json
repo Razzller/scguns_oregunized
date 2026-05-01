@@ -1,0 +1,318 @@
+{
+  "name": "scguns_oregunized:catacombs/rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/bedroom",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/box",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/cata_plus",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/cata_straight",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/cata_three",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/cata_turn",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/confused",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/crates",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/dead_end",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/e_hallway",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/forge",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/lead_door",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/long_three",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/officer",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/radio",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/rec_room",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/repo",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/stairs",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/stairs_three",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/storage",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/super_hallway",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/super_stair",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/top_thing",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "scguns_oregunized:catacombs/hallways/ultrakill",
+        "processors": [
+          {
+            "processor_type": "scguns_oregunized:waterlogged_processor"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

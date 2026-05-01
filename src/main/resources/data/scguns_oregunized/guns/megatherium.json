@@ -26,7 +26,7 @@
       },
       "scope": {
         "size": 0.8,
-        "yOffset": 6.1,
+        "yOffset": 5.9,
         "zOffset": 4.0
       },
       "stock": {
@@ -38,7 +38,7 @@
     },
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 6.0,
+      "yOffset": 6.35,
       "zOffset": 0.75
     }
   },
@@ -69,7 +69,7 @@
     "emptyMagTimer": 10,
     "maxAmmo": 50,
     "reloadItem": "scguns_oregunized:incendiary_round",
-    "reloadTimer": 125,
+    "reloadTimer": 100,
     "reloadType": "scguns:mag_fed"
   },
   "sounds": {

@@ -15,6 +15,10 @@ public class Config {
     public static class Common {
         public final ForgeConfigSpec.DoubleValue leadRoundDamageMultiplier;
         public final ForgeConfigSpec.DoubleValue incendiaryRoundDamageMultiplier;
+        public final ForgeConfigSpec.IntValue mauviteClubDamage;
+        public final ForgeConfigSpec.DoubleValue mauviteClubKnocbackMultiplier;
+        public final ForgeConfigSpec.IntValue mauviteClubEffectDuration;
+
 
         private Common(ForgeConfigSpec.Builder builder) {
             builder.comment("Common configs");
@@ -25,6 +29,16 @@ public class Config {
             incendiaryRoundDamageMultiplier = builder
                     .comment("Damage multiplier for Incendiary Round upon hitting a target with the Brain Damage effect")
                     .defineInRange("incendiaryRoundDamageMultiplier", 1.75, 1.0, Integer.MAX_VALUE);
+
+            mauviteClubDamage = builder
+                    .comment("Damage dealt by mauvite Throwing Clubs")
+                    .defineInRange("mauviteClubDamage", 6, 1, Integer.MAX_VALUE);
+            mauviteClubKnocbackMultiplier = builder
+                    .comment("Knockback multiplier dealt by mauvite Throwing Clubs")
+                    .defineInRange("mauviteClubKnocbackMultiplier", 1.0, 0.0, Integer.MAX_VALUE);
+            mauviteClubEffectDuration = builder
+                    .comment("Duration of Brain Damage dealt by mauvite Throwing Clubs in ticks. 20 Ticks = 1 second")
+                    .defineInRange("mauviteClubEffectDuration", 100, 1, Integer.MAX_VALUE);
         }
     }
 

@@ -7,14 +7,10 @@ import galena.oreganized.index.OEntityTypes;
 import galena.oreganized.index.OItems;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import top.ribs.scguns.common.Gun;
 import top.ribs.scguns.common.network.ServerPlayHandler;
 import top.ribs.scguns.item.GunItem;
@@ -27,8 +23,9 @@ import net.minecraft.world.entity.projectile.Arrow;
 
 @Mixin(ServerPlayHandler.class)
 public abstract class ServerPlayHandlerMixin {
+
     @WrapMethod(method = "fireProjectiles", remap = false)
-    private static void scguns_cnc$fireProjectiles(Level world, ServerPlayer player, ItemStack heldItem, GunItem item, Gun modifiedGun, Operation<Void> original) {
+    private static void scguns_oregunized$fireProjectiles(Level world, ServerPlayer player, ItemStack heldItem, GunItem item, Gun modifiedGun, Operation<Void> original) {
         if (modifiedGun.getProjectile().getItem() == OItems.LEAD_BOLT.get()) {
 
             LeadBoltEntity arrow = new LeadBoltEntity(OEntityTypes.LEAD_BOLT.get(), world, player);

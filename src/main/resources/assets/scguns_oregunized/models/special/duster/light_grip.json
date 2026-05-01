@@ -1,0 +1,75 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "scguns_oregunized:item/duster"
+	},
+	"elements": [
+		{
+			"name": "light_grip",
+			"from": [7.13447, 1.05, 6.2],
+			"to": [8.88447, 1.55, 9.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 10]},
+			"faces": {
+				"north": {"uv": [0.5, 11.5, 1.5, 11.75], "texture": "#0"},
+				"east": {"uv": [11, 3.5, 12.5, 3.75], "texture": "#0"},
+				"south": {"uv": [1.5, 11.5, 2.5, 11.75], "texture": "#0"},
+				"west": {"uv": [11, 4, 12.5, 4.25], "texture": "#0"},
+				"up": {"uv": [9, 6, 8, 4.5], "texture": "#0"},
+				"down": {"uv": [3, 9, 2, 10.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "light_grip",
+			"from": [7.38447, 1.525, 8.625],
+			"to": [8.63447, 3.275, 9.125],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 10]},
+			"faces": {
+				"north": {"uv": [9, 10, 9.75, 10.75], "texture": "#0"},
+				"east": {"uv": [7, 11.5, 7.25, 12.25], "texture": "#0"},
+				"south": {"uv": [10, 9.5, 10.75, 10.25], "texture": "#0"},
+				"west": {"uv": [9, 11.5, 9.25, 12.25], "texture": "#0"},
+				"up": {"uv": [12.25, 8.25, 11.5, 8], "texture": "#0"},
+				"down": {"uv": [12.25, 9, 11.5, 9.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "light_grip",
+			"from": [7.38447, 1.525, 6.45],
+			"to": [8.63447, 2.525, 6.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 10]},
+			"faces": {
+				"north": {"uv": [11, 4.5, 11.75, 5], "texture": "#0"},
+				"east": {"uv": [0, 12.5, 0.25, 13], "texture": "#0"},
+				"south": {"uv": [11, 5.5, 11.75, 6], "texture": "#0"},
+				"west": {"uv": [0.5, 12.5, 0.75, 13], "texture": "#0"},
+				"up": {"uv": [10.25, 11.75, 9.5, 11.5], "texture": "#0"},
+				"down": {"uv": [12.25, 9.5, 11.5, 9.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "light_grip",
+			"from": [7.25947, 0.65, 6.275],
+			"to": [8.75947, 1.15, 9.275],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 10]},
+			"faces": {
+				"north": {"uv": [11.5, 10, 12.25, 10.25], "texture": "#0"},
+				"east": {"uv": [6, 11, 7.5, 11.25], "texture": "#0"},
+				"south": {"uv": [10.5, 11.5, 11.25, 11.75], "texture": "#0"},
+				"west": {"uv": [11, 6, 12.5, 6.25], "texture": "#0"},
+				"up": {"uv": [5.75, 10.5, 5, 9], "texture": "#0"},
+				"down": {"uv": [9.75, 5.5, 9, 7], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "light_grip",
+			"origin": [8.225, -0.25, 8],
+			"scope": 0,
+			"color": 9,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

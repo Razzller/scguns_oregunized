@@ -13,8 +13,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.razetka.scguns_oregunized.Config;
 import net.razetka.scguns_oregunized.init.ModEntities;
 import net.razetka.scguns_oregunized.init.ModItems;
+import net.razetka.scguns_oregunized.Config;
 
 public class ThrowingClubEntity extends ThrowableItemProjectile {
     public ThrowingClubEntity(EntityType<? extends ThrowingClubEntity> pEntityType, Level pLevel) {
@@ -34,9 +36,9 @@ public class ThrowingClubEntity extends ThrowableItemProjectile {
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
         LivingEntity entity = (LivingEntity) pResult.getEntity();
-        entity.hurt(this.damageSources().thrown(this, this.getOwner()), 6);
-        entity.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), 100, 0, true, true));
-        entity.knockback(1.0, -Mth.sin(getYRot() *  Mth.DEG_TO_RAD), -Mth.cos(getYRot() * Mth.DEG_TO_RAD));
+        entity.hurt(this.damageSources().thrown(this, this.getOwner()), Config.COMMON.mauviteClubDamage.get());
+        entity.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), Config.COMMON.mauviteClubEffectDuration.get(), 0, true, true));
+        entity.knockback(Config.COMMON.mauviteClubKnocbackMultiplier.get(), -Mth.sin(getYRot() *  Mth.DEG_TO_RAD), -Mth.cos(getYRot() * Mth.DEG_TO_RAD));
     }
 
     @Override

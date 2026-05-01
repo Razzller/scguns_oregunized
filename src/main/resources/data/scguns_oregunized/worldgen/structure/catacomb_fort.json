@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "scguns_oregunized:catacombs/catacomb_fort",
+  "size": 6,
+  "max_distance_from_center": 80,
+  "biomes": "#scguns_oregunized:has_structure/fort",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "MOTION_BLOCKING_NO_LEAVES",
+  "use_expansion_hack": false,
+  "spawn_overrides": {}
+}

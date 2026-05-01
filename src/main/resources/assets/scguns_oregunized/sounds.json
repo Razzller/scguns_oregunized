@@ -127,5 +127,87 @@
         "name": "scguns_oregunized:item/mauvite_shotgun/silenced_fire"
       }
     ]
+  },
+
+
+
+  "entity.arphilem.idle": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_idle",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle1"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle2"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle3"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle4"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/idle5"
+      }
+    ]
+  },
+  "entity.arphilem.hurt": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_hurt",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt1"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt2"
+      },
+      {
+        "name": "scguns_oregunized:entity/arphilem/hurt3"
+      }
+    ]
+  },
+  "entity.arphilem.death": {
+    "subtitle": "subtitle.scguns_oregunized.arphilem_death",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/arphilem/death"
+      }
+    ]
+  },
+
+  "entity.tirone.idle": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_idle",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/idle1"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/idle2"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/idle3"
+      }
+    ]
+  },
+  "entity.tirone.hurt": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_hurt",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt1"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt2"
+      },
+      {
+        "name": "scguns_oregunized:entity/tirone/hurt3"
+      }
+    ]
+  },
+  "entity.tirone.death": {
+    "subtitle": "subtitle.scguns_oregunized.tirone_death",
+    "sounds": [
+      {
+        "name": "scguns_oregunized:entity/tirone/death1"
+      }
+    ]
   }
 }

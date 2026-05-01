@@ -12,5 +12,6 @@ public class ModEntityAttributes {
     @SubscribeEvent
     public static void onEntityAttributeModification(EntityAttributeModificationEvent event) {
         event.add(EntityType.PLAYER, ModAttributes.FALL_DAMAGE_REDUCTION.get());
+        event.add(EntityType.PLAYER, ModAttributes.BULLET_DAMAGE_REDUCTION.get());
     }
 }

@@ -1,0 +1,62 @@
+{
+  "id": "scguns_oregunized:tirone",
+  "equipment_chance": 1.0,
+  "items": [
+    {
+      "item": "scguns_oregunized:wolfhound",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:warthog",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:duster",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:trenchbroom",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:tirone_smg",
+      "weight": 8.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:prospector",
+      "weight": 6.0,
+      "drop_chance": 0.2,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    },
+    {
+      "item": "scguns_oregunized:mauvite_bludgeon",
+      "weight": 18.0,
+      "drop_chance": 0.3,
+      "min_durability": 0.2,
+      "max_durability": 0.6,
+      "slot": "mainhand"
+    }
+  ]
+}
