@@ -257,9 +257,10 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> STELLAR_ORDER_BLUEPRINT = ITEMS.register("stellar_order_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> STELLAR_ORDER_BLUEPRINT = ITEMS.register("stellar_order_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1).rarity(ModRarities.ORGANIZED)));
     public static final RegistryObject<Item> ELECTRUM_GUN_FRAME = ITEMS.register("electrum_gun_frame", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new TooltipItem(new Item.Properties().stacksTo(1),
+    public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new TooltipItem(new Item.Properties()
+            .rarity(ModRarities.ORGANIZED),
             "item.scguns_oregunized.assassin_dagger_tooltip",
             "item.scguns.found_in_raids"));
     public static final RegistryObject<Item> STELLAR_ORDER_FLARE = ITEMS.register("stellar_order_flare",
@@ -298,7 +299,7 @@ public class ModItems {
     public static final RegistryObject<Item> UNION_FLARE = ITEMS.register("union_flare",
             () -> new RaidFlareItem(new Item.Properties().stacksTo(16),"white_wolf"));
     public static final RegistryObject<Item> UNION_BLUEPRINT = ITEMS.register("union_blueprint", () -> new BlueprintItem(new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> MEDAL_OF_HONOR = ITEMS.register("medal_of_honor", () -> new TooltipItem(new Item.Properties().stacksTo(1),
+    public static final RegistryObject<Item> MEDAL_OF_HONOR = ITEMS.register("medal_of_honor", () -> new TooltipItem(new Item.Properties(),
             "item.scguns_oregunized.medal_of_honor_tooltip",
             "item.scguns.found_in_raids"));
 

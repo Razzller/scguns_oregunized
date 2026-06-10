@@ -1,6 +1,7 @@
 package net.razetka.scguns_oregunized.common.entity;
 
 import galena.oreganized.index.OEffects;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
@@ -17,6 +18,10 @@ import net.razetka.scguns_oregunized.Config;
 import net.razetka.scguns_oregunized.init.ModEntities;
 import net.razetka.scguns_oregunized.init.ModItems;
 import net.razetka.scguns_oregunized.Config;
+import net.razetka.scguns_oregunized.init.ModParticleTypes;
+
+import static net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity.spawnParticles;
+
 
 public class ThrowingClubEntity extends ThrowableItemProjectile {
     public ThrowingClubEntity(EntityType<? extends ThrowingClubEntity> pEntityType, Level pLevel) {
@@ -39,6 +44,8 @@ public class ThrowingClubEntity extends ThrowableItemProjectile {
         entity.hurt(this.damageSources().thrown(this, this.getOwner()), Config.COMMON.mauviteClubDamage.get());
         entity.addEffect(new MobEffectInstance(OEffects.STUNNING.get(), Config.COMMON.mauviteClubEffectDuration.get(), 0, true, true));
         entity.knockback(Config.COMMON.mauviteClubKnocbackMultiplier.get(), -Mth.sin(getYRot() *  Mth.DEG_TO_RAD), -Mth.cos(getYRot() * Mth.DEG_TO_RAD));
+
+        spawnParticles(entity, entity.level());
     }
 
     @Override

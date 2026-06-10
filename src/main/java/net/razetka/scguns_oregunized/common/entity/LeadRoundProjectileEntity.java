@@ -102,18 +102,8 @@ public class LeadRoundProjectileEntity extends ProjectileEntity {
 
     }
 
-    public void spawnParticles(Entity entity, Level level) {
+    public static void spawnParticles(Entity entity, Level level) {
         int count = 3;
-
-//        if (!entity.level().isClientSide()) {
-//            for (int i = 0; i < count; i++) {
-//                entity.level().addParticle(
-//                        ModParticleTypes.LEAD_HIT_PARTICLE.get(),
-//                        entity.getRandomX(0.75), entity.getRandomY(), entity.getRandomZ(0.75),
-//                        0, 0, 0);
-//            }
-//        }
-
         if (!entity.level().isClientSide()) {
             for (int i = 0; i < count; ++i) {
                 ((ServerLevel)level).sendParticles(ModParticleTypes.LEAD_HIT_PARTICLE.get(),

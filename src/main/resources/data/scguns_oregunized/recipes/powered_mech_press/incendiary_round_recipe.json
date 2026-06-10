@@ -1,0 +1,20 @@
+{
+  "type": "scguns:powered_mechanical_pressing",
+  "processingTime": 10,
+  "energyUse": 500,
+  "ingredients": [
+    {
+      "item": "scguns_oregunized:large_mauvite_casing"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "oreganized:lead_ingot"
+    }
+  ],
+  "result": {
+    "item": "scguns_oregunized:incendiary_round",
+    "count": 1
+  }
+}

@@ -27,7 +27,7 @@
       "item": "scguns:heavy_gun_barrel"
     },
     "gun_magazine": {
-      "item": "oreganized:silver_ingot"
+      "tag": "forge:ingots/silver"
     }
   }
 }

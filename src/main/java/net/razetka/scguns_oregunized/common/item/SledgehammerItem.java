@@ -12,19 +12,19 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.Tags;
-import net.razetka.scguns_oregunized.init.ModTags;
+import net.razetka.scguns_oregunized.init.ModParticleTypes;
 import net.razetka.scguns_oregunized.init.ModTiers;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
+import static net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity.spawnParticles;
+
 public class SledgehammerItem extends DiggerItem {
     private final String tooltipKey;
 
     public SledgehammerItem(Item.Properties pProperties, String tooltipKey) {
-        super(9, -3.3F, ModTiers.SLEDGEHAMMER, BlockTags.MINEABLE_WITH_PICKAXE, pProperties);
+        super(10, -3.3F, ModTiers.SLEDGEHAMMER, BlockTags.MINEABLE_WITH_PICKAXE, pProperties);
         this.tooltipKey = tooltipKey;
     }
 
@@ -49,15 +49,17 @@ public class SledgehammerItem extends DiggerItem {
         }
 
         ServerLevel level = (ServerLevel) attacker.level();
-        playExplosionSound(level, target);
+        playSoundSpawnParticles(level, target);
     }
 
-    private void playExplosionSound(Level world, LivingEntity target) {
+    private void playSoundSpawnParticles(ServerLevel world, LivingEntity target) {
         float pitch = (0.8F + world.random.nextFloat() * 0.4F);
+        if (!target.level().isClientSide()) {
+            world.playSound(null, target.getX(), target.getY(), target.getZ(),
+                    SoundEvents.ANVIL_LAND, SoundSource.PLAYERS, 1.2F, pitch);
 
-        ((ServerLevel) world).playSound(null, target.getX(), target.getY(), target.getZ(),
-                SoundEvents.ANVIL_FALL, SoundSource.PLAYERS, 1.2F, 0.8f);
-        //TODO fix the sound!
+            spawnParticles(target, world);
+        }
     }
 
 
@@ -69,10 +71,5 @@ public class SledgehammerItem extends DiggerItem {
                     .withStyle(ChatFormatting.ITALIC));
         }
         super.appendHoverText(stack, level, tooltip, flag);
-    }
-
-    @Override
-    public boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
-        return false;
     }
 }

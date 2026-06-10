@@ -15,7 +15,7 @@
       "item": "scguns:heavy_gun_parts"
     },
     "gun_top_internal_1": {
-      "item": "oreganized:silver_ingot"
+      "tag": "forge:ingots/silver"
     },
     "gun_top_internal_2": {
       "item": "scguns_oregunized:electrum_gun_frame"

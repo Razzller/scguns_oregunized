@@ -42,7 +42,7 @@
     "damageFalloffMinMultiplier": 0.35,
     "ejectsCasing": true,
     "item": "scguns_oregunized:incendiary_round",
-    "casingType": "scguns_oregunized:medium_mauvite_casing",
+    "casingType": "scguns_oregunized:large_mauvite_casing",
     "casingParticle": "scguns_oregunized:mauvite_casing",
     "life": 40,
     "size": 0.05,

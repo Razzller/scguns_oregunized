@@ -33,6 +33,8 @@ import top.ribs.scguns.network.PacketHandler;
 import top.ribs.scguns.network.message.S2CMessageProjectileHitEntity;
 import top.ribs.scguns.util.GunEnchantmentHelper;
 
+import static net.razetka.scguns_oregunized.common.entity.LeadRoundProjectileEntity.spawnParticles;
+
 public class IncendiaryRoundProjectileEntity extends ProjectileEntity {
     private static final float SHIELD_IGNITE_CHANCE = 0.4f;
 
@@ -107,15 +109,4 @@ public class IncendiaryRoundProjectileEntity extends ProjectileEntity {
         }
     }
 
-    public static void spawnParticles(Entity entity, Level level) {
-        int count = 3;
-
-        if (!entity.level().isClientSide()) {
-            for (int i = 0; i < count; ++i) {
-                ((ServerLevel)level).sendParticles(ModParticleTypes.LEAD_HIT_PARTICLE.get(),
-                        entity.getRandomX(0.75), entity.getRandomY(), entity.getRandomZ(0.75),
-                        3, 0, 0, 0,0);
-            }
-        }
-    }
 }
