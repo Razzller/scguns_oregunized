@@ -43,7 +43,7 @@
     "recoilAngle": 2.5,
     "recoilKick": 1.5,
     "spread": 2.5,
-    "criticalChance": 0.08,
+    "criticalChance": 0.15,
     "critDamageMultiplier": 2.5,
     "advantage": "scguns:none",
     "damageFalloffStart": 12.0,
@@ -63,7 +63,7 @@
   },
   "reloads": {
     "emptyMagTimer": 10,
-    "maxAmmo": 18,
+    "maxAmmo": 16,
     "reloadItem": "scguns:compact_advanced_round",
     "reloadTimer": 30,
     "reloadType": "scguns:mag_fed"

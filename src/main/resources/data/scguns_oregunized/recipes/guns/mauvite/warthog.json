@@ -15,10 +15,10 @@
       "item": "scguns:gun_parts"
     },
     "gun_top_internal_1": {
-      "item": "minecraft:copper_ingot"
+      "item": "scguns_oregunized:mauvite_ingot"
     },
     "gun_top_internal_2": {
-      "item": "scguns_oregunized:mauvite_gun_frame"
+      "item": "scguns_oregunized:mauvite_ingot"
     },
     "gun_grip": {
       "item": "scguns:gun_grip"

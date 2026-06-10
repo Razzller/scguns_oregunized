@@ -44,7 +44,7 @@
     "recoilKick": 1.2,
     "spread": 1.7,
     "alwaysSpread": true,
-    "criticalChance": 0.05,
+    "criticalChance": 0.1,
     "critDamageMultiplier": 3.0,
     "advantage": "scguns:none",
     "damage": 6.5,

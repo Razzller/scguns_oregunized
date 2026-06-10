@@ -58,7 +58,7 @@
     "damageFalloffStart": 28.0,
     "damageFalloffEnd": 65.0,
     "damageFalloffMinMultiplier": 0.75,
-    "armorPen": 2.0,
+    "armorPen": 3.0,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns_oregunized:lead_slug",

@@ -43,7 +43,7 @@
     "recoilAngle": 3.0,
     "recoilKick": 1.5,
     "spread": 0.75,
-    "criticalChance": 0.07,
+    "criticalChance": 0.05,
     "advantage": "scguns:none",
     "damage": 9,
     "armorPen": 3.0,
@@ -57,7 +57,7 @@
     "casingParticle": "scguns_oregunized:mauvite_casing",
     "life": 50,
     "size": 1.0,
-    "speed": 5.0,
+    "speed": 6.0,
     "trailLengthMultiplier": 2.0
   },
   "reloads": {

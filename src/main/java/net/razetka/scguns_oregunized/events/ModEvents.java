@@ -34,7 +34,6 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void LivingHurtEvent(LivingHurtEvent event) {
-        handleFallDamageReduction(event);
         handleBulletDamageReduction(event);
     }
 
@@ -49,17 +48,6 @@ public class ModEvents {
     }
 
 
-    private static void handleFallDamageReduction(LivingHurtEvent event) {
-        if (event.getEntity() instanceof Player) {
-            LivingEntity player = event.getEntity();
-            DamageSource source = event.getSource();
-            AttributeInstance attribute = player.getAttribute(ModAttributes.FALL_DAMAGE_REDUCTION.get());
-            if (attribute != null && source.is(DamageTypes.FALL)) {
-                float newDamage = (float) (event.getAmount() - event.getAmount() * attribute.getValue() );
-                event.setAmount(newDamage);
-            }
-        }
-    }
 
     private static void handleBulletDamageReduction(LivingHurtEvent event) {
         if (event.getEntity() instanceof Player) {

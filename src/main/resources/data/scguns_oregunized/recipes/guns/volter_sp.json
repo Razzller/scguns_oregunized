@@ -15,7 +15,7 @@
       "item": "scguns:gun_parts"
     },
     "gun_top_internal_1": {
-      "item": "oreganized:electrum_ingot"
+      "tag": "forge:ingots/electrum"
     },
     "gun_top_internal_2": {
       "item": "scguns:copper_disc"

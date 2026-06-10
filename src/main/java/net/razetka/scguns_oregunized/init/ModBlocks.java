@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.razetka.scguns_oregunized.ScGunsOregunized;
 import net.razetka.scguns_oregunized.common.block.AnchorBlock;
-import net.razetka.scguns_oregunized.common.block.LuxuriousVaseBlock;
 import net.razetka.scguns_oregunized.common.block.MauvitePressurePlateBlock;
 
 import java.util.function.Supplier;

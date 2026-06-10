@@ -22,7 +22,7 @@ public class ModTiers {
 
         @Override
         public int getLevel() {
-            return -1;
+            return 3;
         }
 
         @Override

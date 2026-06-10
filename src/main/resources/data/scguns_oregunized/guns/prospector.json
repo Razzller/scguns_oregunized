@@ -53,7 +53,7 @@
     "criticalChance": 0.05,
     "advantage": "scguns:none",
     "damage": 10.0,
-    "armorPen": 1.0,
+    "armorPen": 3.0,
     "damageFalloffStart": 18.0,
     "damageFalloffEnd": 45.0,
     "damageFalloffMinMultiplier": 0.65,

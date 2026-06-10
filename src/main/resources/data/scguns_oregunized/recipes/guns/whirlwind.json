@@ -15,10 +15,10 @@
       "item": "scguns:gun_parts"
     },
     "gun_top_internal_1": {
-      "item": "oreganized:silver_ingot"
+      "tag": "forge:ingots/silver"
     },
     "gun_top_internal_2": {
-      "item": "oreganized:electrum_ingot"
+      "tag": "forge:ingots/electrum"
     },
     "gun_grip": {
       "item": "scguns:gun_magazine"
